@@ -1,81 +1,18 @@
-/* html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
 .swiper {
-  width: 100%;
-  height: 100%;
+  --add-bottom: 50px;
+  padding-bottom: var(--add-bottom);
+}
+.swiper [class^="swiper-button-"] {
+  top: calc(50% - var(--add-bottom) / 2);
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-body {
-  background: #000;
-  color: #000;
-}
-
-.swiper {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-slide {
+.swiper .swiper-pagination-bullet {
+  background-image: url("../assets/icons/bullet.svg");
   background-size: cover;
-  background-position: center;
+  border-radius: initial;
+  width: 20px;
+  height: 20px;
 }
 
-.mySwiper2 {
-  height: 80%;
-  width: 100%;
-}
-
-.mySwiper {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-
-.mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.4;
-}
-
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
