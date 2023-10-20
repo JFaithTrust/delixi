@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Footer, Navbar } from "./components";
-import { About, Home, News } from "./pages";
+import { About, Branchs, Home, News } from "./pages";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/news" element={<News />} />
+          <Route path="/branchs" element={<Branchs />} />
         </Routes>
       </div>
       <div className="bg-red-600">

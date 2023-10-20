@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  About,
+  AboutComp,
   Catalog,
   Comunity,
   News,
@@ -16,7 +16,7 @@ const Home = () => {
         <Slider />
       </div>
       <div className="container mx-auto px-20">
-        <About />
+        <AboutComp />
       </div>
       <div className="container mx-auto px-20">
         <Comunity />
@@ -35,7 +35,14 @@ const Home = () => {
               Ko’proq malumot olish
             </div>
           </div>
-          <div>
+          <div className="flex flex-col mt-10">
+            <p className="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+              quibusdam magnam ex maxime, autem nobis sint, atque dolor sunt quos{" "}
+              <br />
+              ipsum deleniti blanditiis aspernatur iusto aliquid eum deserunt et.
+              Totam?
+            </p>
             <Statistics />
           </div>
         </div>

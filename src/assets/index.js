@@ -1,5 +1,9 @@
 import logo from "./logo/logo.svg";
 import about from "./images/about.jpg";
+import about_1 from './images/about_1.jpg'
+import about_2 from './images/about_2.jpg'
+import about_3 from './images/about_3.jpg'
+
 import catalog_1 from "./images/catalog_1.svg";
 import catalog_2 from "./images/catalog_2.svg";
 import catalog_3 from "./images/catalog_3.svg";
@@ -23,6 +27,9 @@ import news_4 from "./images/news/news_4.jpg";
 export {
   logo,
   about,
+  about_1,
+  about_2,
+  about_3,
   catalog_1,
   catalog_2,
   catalog_3,

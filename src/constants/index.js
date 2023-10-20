@@ -18,19 +18,27 @@ import {
   product_8,
 } from "../assets";
 
+import { AiFillInstagram } from 'react-icons/ai'
+import { BiLogoTelegram, BiLogoFacebook } from 'react-icons/bi'
+import { IoLogoYoutube } from 'react-icons/io'
+
 export const navLinks = [
   {
-    title: "Home",
+    title: "Bosh sahifa",
     path: "/",
   },
   {
-    title: "About Us",
+    title: "Biz Haqimizda",
     path: "/about-us",
   },
   {
-    title: "News",
-    path: "/news",
+    title: "Filiallar",
+    path: "/branchs",
   },
+  {
+    title: "Yangiliklar",
+    path: "/news",
+  }
 ];
 
 export const sliderPictures = [
@@ -240,3 +248,20 @@ export const testimonals = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
 ];
+
+export const contacts = [{
+  name: 'INSTAGRAM',
+  icon: <AiFillInstagram className="bg-white text-rose-600 rounded-md p-0.5" fontSize={25} />
+},
+{
+  name: 'TELEGRAM',
+  icon: <BiLogoTelegram className="bg-white text-sky-600 rounded-md p-0.5" fontSize={25} />
+},
+{
+  name: 'FACEBOOK',
+  icon: <BiLogoFacebook className="bg-white text-blue-700 rounded-md p-0.5" fontSize={25} />
+},
+{
+  name: 'YOUTUBE',
+  icon: <IoLogoYoutube className="bg-white text-red-600 rounded-md p-0.5" fontSize={25} />
+}]

@@ -16,7 +16,7 @@ const Testimonals = () => {
           doloremque culpa?
         </p>
       </div>
-      <div className="flex gap-8">
+      <div className="flex gap-20">
         {testimonals.map((item) => (
           <div
             className="flex flex-col bg-red-200 rounded-md py-4 px-3 space-y-4"

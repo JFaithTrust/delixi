@@ -8,7 +8,6 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
-import "./slider.css";
 
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 import { sliderPictures } from "../constants";
