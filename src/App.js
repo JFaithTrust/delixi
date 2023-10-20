@@ -14,7 +14,9 @@ function App() {
           <Route path="/news" element={<News />} />
         </Routes>
       </div>
-      <Footer />
+      <div className="bg-red-600">
+        <Footer />
+      </div>
     </div>
   );
 }

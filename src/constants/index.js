@@ -101,97 +101,142 @@ export const comunity = [
   },
 ];
 
-export const products = [{
-  url: product_1,
-  title: 'Product name',
-  description: 'Some description',
-  color: 'Black'
-},
-{
-  url: product_2,
-  title: 'Product name',
-  description: 'Some description',
-  color: 'Black'
-},
-{
-  url: product_3,
-  title: 'Product name',
-  description: 'Some description',
-  color: 'Black'
-},
-{
-  url: product_4,
-  title: 'Product name',
-  description: 'Some description',
-  color: 'Black'
-},
-{
-  url: product_5,
-  title: 'Product name',
-  description: 'Some description',
-  color: 'Black'
-},
-{
-  url: product_6,
-  title: 'Product name',
-  description: 'Some description',
-  color: 'Black'
-},
-{
-  url: product_7,
-  title: 'Product name',
-  description: 'Some description',
-  color: 'Black'
-},{
-  url: product_8,
-  title: 'Product name',
-  description: 'Some description',
-  color: 'Black'
-}]
+export const products = [
+  {
+    url: product_1,
+    title: "Product name",
+    description: "Some description",
+    color: "Black",
+  },
+  {
+    url: product_2,
+    title: "Product name",
+    description: "Some description",
+    color: "Black",
+  },
+  {
+    url: product_3,
+    title: "Product name",
+    description: "Some description",
+    color: "Black",
+  },
+  {
+    url: product_4,
+    title: "Product name",
+    description: "Some description",
+    color: "Black",
+  },
+  {
+    url: product_5,
+    title: "Product name",
+    description: "Some description",
+    color: "Black",
+  },
+  {
+    url: product_6,
+    title: "Product name",
+    description: "Some description",
+    color: "Black",
+  },
+  {
+    url: product_7,
+    title: "Product name",
+    description: "Some description",
+    color: "Black",
+  },
+  {
+    url: product_8,
+    title: "Product name",
+    description: "Some description",
+    color: "Black",
+  },
+];
 
-export const statistics = [{
-  title: 'Filiallar Soni',
-  count: 180
-},
-{
-  title: 'Mahsulotlar',
-  count: 450
-},
-{
-  title: 'Bizning Mijozlar',
-  count: 750
-},
-{
-  title: 'Bizning Xizmatlar',
-  count: 55
-}]
+export const statistics = [
+  {
+    title: "Filiallar Soni",
+    count: 180,
+  },
+  {
+    title: "Mahsulotlar",
+    count: 450,
+  },
+  {
+    title: "Bizning Mijozlar",
+    count: 750,
+  },
+  {
+    title: "Bizning Xizmatlar",
+    count: 55,
+  },
+];
 
+export const news = [
+  {
+    url: news_1,
+    title:
+      "Maria Doe It is a long established fact that a reader will be distracted",
+    description:
+      "Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.",
+    date: 325,
+    view: 325,
+  },
+  {
+    url: news_2,
+    title:
+      "Maria Doe It is a long established fact that a reader will be distracted",
+    description:
+      "Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.",
+    date: 325,
+    view: 325,
+  },
+  {
+    url: news_3,
+    title:
+      "Maria Doe It is a long established fact that a reader will be distracted",
+    description:
+      "Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.",
+    date: 325,
+    view: 325,
+  },
+  {
+    url: news_4,
+    title:
+      "Maria Doe It is a long established fact that a reader will be distracted",
+    description:
+      "Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.",
+    date: 325,
+    view: 325,
+  },
+];
 
-export const news = [{
-  url: news_1,
-  title: 'Maria Doe It is a long established fact that a reader will be distracted',
-  description: 'Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.',
-  date: 325,
-  view: 325
-},
-{
-  url: news_2,
-  title: 'Maria Doe It is a long established fact that a reader will be distracted',
-  description: 'Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.',
-  date: 325,
-  view: 325
-},
-{
-  url: news_3,
-  title: 'Maria Doe It is a long established fact that a reader will be distracted',
-  description: 'Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.',
-  date: 325,
-  view: 325
-},
-{
-  url: news_4,
-  title: 'Maria Doe It is a long established fact that a reader will be distracted',
-  description: 'Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.',
-  date: 325,
-  view: 325
-}]
+export const testimonals = [
+  {
+    id: 1,
+    name: "John Doe",
+    job: "SEO Optimizer",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  },
+  {
+    id: 2,
+    name: "John Doe",
+    job: "SEO Optimizer",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  },
+  {
+    id: 3,
+    name: "John Doe",
+    job: "SEO Optimizer",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  },
+  {
+    id: 4,
+    name: "John Doe",
+    job: "SEO Optimizer",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+  },
+];

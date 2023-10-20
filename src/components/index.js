@@ -4,6 +4,7 @@ export { default as Slider } from "./Slider";
 export { default as About } from "./About";
 export { default as Comunity } from "./Comunity";
 export { default as Catalog } from "./Catalog";
-export { default as Product } from './Product'
-export { default as Statistics } from './Statistics.jsx'
-export { default as News } from './News'
+export { default as Product } from "./Product";
+export { default as Statistics } from "./Statistics.jsx";
+export { default as News } from "./News";
+export { default as Testimonals } from "./Testimonals";
