@@ -4,6 +4,10 @@ import {
   catalog_3,
   catalog_4,
   catalog_5,
+  newBotoom_1,
+  newBotoom_2,
+  newBotoom_3,
+  newBotoom_4,
   news_1,
   news_2,
   news_3,
@@ -264,4 +268,61 @@ export const contacts = [{
 {
   name: 'YOUTUBE',
   icon: <IoLogoYoutube className="bg-white text-red-600 rounded-md p-0.5" fontSize={25} />
+}]
+
+export const newsTop = [{
+  id: 1,
+  date: "09:49 / 23.05.2023",
+  view: 22234,
+  description: 'Risus fringilla curabitur dui nibh ipsum velit lacus. Integer morbi massa libero ultrices elit congue ac orci.'
+},{
+  id: 2,
+  date: "09:49 / 23.05.2023",
+  view: 22234,
+  description: 'Risus fringilla curabitur dui nibh ipsum velit lacus. Integer morbi massa libero ultrices elit congue ac orci.'
+},{
+  id: 3, 
+  date: "09:49 / 23.05.2023",
+  view: 22234,
+  description: 'Risus fringilla curabitur dui nibh ipsum velit lacus. Integer morbi massa libero ultrices elit congue ac orci.'
+},{
+  id: 4,
+  date: "09:49 / 23.05.2023",
+  view: 22234,
+  description: 'Risus fringilla curabitur dui nibh ipsum velit lacus. Integer morbi massa libero ultrices elit congue ac orci.'
+},{
+  id: 5,
+  date: "09:49 / 23.05.2023",
+  view: 22234,
+  description: 'Risus fringilla curabitur dui nibh ipsum velit lacus. Integer morbi massa libero ultrices elit congue ac orci.'
+}]
+
+export const newsBottom = [{
+  id: 1,
+  url: newBotoom_1,
+  title: 'Battlegrounds Mobile India iOS release date',
+  description: "The reason behind their disappointment is that iPhone users have beenThe reason behind their disappointment is that iPhone users have been.",
+  date: 156514,
+  view: 42
+},{
+  id: 2,
+  url: newBotoom_2,
+  title: 'Battlegrounds Mobile India iOS release date',
+  description: "The reason behind their disappointment is that iPhone users have beenThe reason behind their disappointment is that iPhone users have been.",
+  date: 156514,
+  view: 42
+},{
+  id: 3,
+  url: newBotoom_3,
+  title: 'Battlegrounds Mobile India iOS release date',
+  description: "The reason behind their disappointment is that iPhone users have beenThe reason behind their disappointment is that iPhone users have been.",
+  date: 156514,
+  view: 42
+},{
+  id: 4,
+  url: newBotoom_4,
+  title: 'Battlegrounds Mobile India iOS release date',
+  description: "The reason behind their disappointment is that iPhone users have beenThe reason behind their disappointment is that iPhone users have been.",
+  date: 156514,
+  view: 42
 }]

@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import { Grid, Pagination, Navigation } from "swiper/modules";
 import { products } from "../constants";
 
-import "./slider.css";
+import "./create.css";
 
 // const PrevButton = () => {
 //    const swiper = useSwiper()

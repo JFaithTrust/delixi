@@ -12,7 +12,7 @@ import {
 const Home = () => {
   return (
     <div className="flex flex-col">
-      <div>
+      <div className="h-screen">
         <Slider />
       </div>
       <div className="container mx-auto px-20">

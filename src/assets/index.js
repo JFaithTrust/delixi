@@ -1,8 +1,8 @@
 import logo from "./logo/logo.svg";
 import about from "./images/about.jpg";
-import about_1 from './images/about_1.jpg'
-import about_2 from './images/about_2.jpg'
-import about_3 from './images/about_3.jpg'
+import about_1 from "./images/about_1.jpg";
+import about_2 from "./images/about_2.jpg";
+import about_3 from "./images/about_3.jpg";
 
 import catalog_1 from "./images/catalog_1.svg";
 import catalog_2 from "./images/catalog_2.svg";
@@ -23,6 +23,13 @@ import news_1 from "./images/news/news_1.jpg";
 import news_2 from "./images/news/news_2.jpg";
 import news_3 from "./images/news/news_3.jpg";
 import news_4 from "./images/news/news_4.jpg";
+import centerNew from "./images/news/center_new.jpg";
+import newBotoom_1 from "./images/news/newBottom_1.jpg";
+import newBotoom_2 from "./images/news/newBottom_2.jpg";
+import newBotoom_3 from "./images/news/newBottom_3.jpg";
+import newBotoom_4 from "./images/news/newBottom_4.jpg";
+import newsDetail from './images/news/news_detail.jpg'
+import example from './images/news/example.jpg'
 
 export {
   logo,
@@ -47,4 +54,11 @@ export {
   news_2,
   news_3,
   news_4,
+  centerNew,
+  newBotoom_1,
+  newBotoom_2,
+  newBotoom_3,
+  newBotoom_4,
+  newsDetail,
+  example
 };
