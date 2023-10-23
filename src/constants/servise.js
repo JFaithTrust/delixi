@@ -5,9 +5,9 @@ export const ProductService = {
         return [
             {
                 id: 1,
-                name: 'Bamboo Watch',
-                description: 'Product Description',
+                name: 'Beat',
                 image: product_1,
+                description: 'Product Description',
                 price: 65,
                 category: 'Accessories',
                 rating: 5
@@ -15,8 +15,8 @@ export const ProductService = {
             {
                 id: 2,
                 name: 'Bamboo Watch',
-                description: 'Product Description',
                 image: product_2,
+                description: 'Product Description',
                 price: 65,
                 category: 'Accessories',
                 rating: 5
@@ -24,8 +24,8 @@ export const ProductService = {
             {
                 id: 3,
                 name: 'Bamboo Watch',
-                description: 'Product Description',
                 image: product_3,
+                description: 'Product Description',
                 price: 65,
                 category: 'Accessories',
                 rating: 5
@@ -33,8 +33,8 @@ export const ProductService = {
             {
                 id: 4,
                 name: 'Bamboo Watch',
-                description: 'Product Description',
                 image: product_4,
+                description: 'Product Description',
                 price: 65,
                 category: 'Accessories',
                 rating: 5
@@ -42,8 +42,8 @@ export const ProductService = {
             {
                 id: 5,
                 name: 'Bamboo Watch',
-                description: 'Product Description',
                 image: product_5,
+                description: 'Product Description',
                 price: 65,
                 category: 'Accessories',
                 rating: 5
@@ -51,8 +51,8 @@ export const ProductService = {
             {
                 id: 6,
                 name: 'Bamboo Watch',
-                description: 'Product Description',
                 image: product_6,
+                description: 'Product Description',
                 price: 65,
                 category: 'Accessories',
                 rating: 5
@@ -60,8 +60,8 @@ export const ProductService = {
             {
                 id: 7,
                 name: 'Bamboo Watch',
-                description: 'Product Description',
                 image: product_7,
+                description: 'Product Description',
                 price: 65,
                 category: 'Accessories',
                 rating: 5
@@ -69,8 +69,80 @@ export const ProductService = {
             {
                 id: 8,
                 name: 'Bamboo Watch',
-                description: 'Product Description',
                 image: product_8,
+                description: 'Product Description',
+                price: 65,
+                category: 'Accessories',
+                rating: 5
+            },
+            {
+                id: 9,
+                name: 'Bamboo Watch',
+                image: product_1,
+                description: 'Product Description',
+                price: 65,
+                category: 'Accessories',
+                rating: 5
+            },
+            {
+                id: 10,
+                name: 'Bamboo Watch',
+                image: product_1,
+                description: 'Product Description',
+                price: 65,
+                category: 'Accessories',
+                rating: 5
+            },
+            {
+                id: 11,
+                name: 'Bamboo Watch',
+                image: product_1,
+                description: 'Product Description',
+                price: 65,
+                category: 'Accessories',
+                rating: 5
+            },
+            {
+                id: 12,
+                name: 'Bamboo Watch',
+                image: product_1,
+                description: 'Product Description',
+                price: 65,
+                category: 'Accessories',
+                rating: 5
+            },
+            {
+                id: 13,
+                name: 'Bamboo Watch',
+                image: product_1,
+                description: 'Product Description',
+                price: 65,
+                category: 'Accessories',
+                rating: 5
+            },
+            {
+                id: 14,
+                name: 'Bamboo Watch',
+                image: product_1,
+                description: 'Product Description',
+                price: 65,
+                category: 'Accessories',
+                rating: 5
+            },
+            {
+                id: 15,
+                name: 'Bamboo Watch',
+                image: product_1,
+                description: 'Product Description',
+                price: 65,
+                category: 'Accessories',
+                rating: 5
+            },
+            {
+                id: 16,
+                name: 'Bamboo Watch',
+                image: product_1,
+                description: 'Product Description',
                 price: 65,
                 category: 'Accessories',
                 rating: 5

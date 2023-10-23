@@ -1,0 +1,10 @@
+{
+  "navbar" : {
+    "main_page": "Главный",
+    "about_us": "O нас",
+    "news": "Новости",
+    "branchs": "Ветви"
+  },
+  "contact" : "Kонтакт",
+  "catalog": "Kаталог"
+}

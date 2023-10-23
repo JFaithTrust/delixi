@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Branchs = () => {
-  return (
-    <div>Branchs</div>
-  )
-}
+  const { t } = useTranslation();
 
-export default Branchs
+
+  return (
+    <div>
+      <div>
+        <h1>{t("greeting")}</h1>
+        <p>{t("welcome")}</p>
+      </div>
+    </div>
+  );
+};
+
+export default Branchs;

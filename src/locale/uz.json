@@ -1,0 +1,10 @@
+{
+  "navbar" : {
+    "main_page": "Bosh sahifa",
+    "about_us": "Biz haqimizda",
+    "news": "Yangiliklar",
+    "branchs": "Filiallar"
+  },
+  "contact" : "Aloqa",
+  "catalog": "Katalog"
+}
