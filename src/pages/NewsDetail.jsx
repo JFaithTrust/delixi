@@ -3,7 +3,7 @@ import { example, newsDetail } from "../assets";
 
 const NewsDetail = () => {
   return (
-    <div>
+    <div className="top-[78px] relative">
       <img
         src={newsDetail}
         alt=""

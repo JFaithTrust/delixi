@@ -77,6 +77,7 @@ export const sliderPictures = [
 
 export const comunity = [
   {
+    id: 1,
     url: catalog_1,
     name: "Power Distribution",
     title: "Membership Organisations",
@@ -84,6 +85,7 @@ export const comunity = [
       "Our membership management software provides full automation of membership renewals and payments",
   },
   {
+    id: 2,
     url: catalog_2,
     name: "Electrical Materials",
     title: "Membership Organisations",
@@ -91,6 +93,7 @@ export const comunity = [
       "Our membership management software provides full automation of membership renewals and payments",
   },
   {
+    id: 3,
     url: catalog_3,
     name: "Final Distribution",
     title: "National Associations",
@@ -98,6 +101,7 @@ export const comunity = [
       "Our membership management software provides full automation of membership renewals and payments",
   },
   {
+    id: 4,
     url: catalog_4,
     name: "Power Supply",
     title: "Clubs And Groups",
@@ -105,6 +109,7 @@ export const comunity = [
       "Our membership management software provides full automation of membership renewals and payments",
   },
   {
+    id: 5,
     url: catalog_5,
     name: "Power Managment",
     title: "Clubs And Groups",

@@ -4,7 +4,7 @@ import { Statistics, Testimonals, AboutComp } from "../components";
 
 const About = () => {
   return (
-    <div>
+    <div className="top-[78px] relative">
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center h-[600px] flex justify-center items-center gap-20">
         <div className="bg-black/80 text-white px-6 py-4 border-4 border-red-600 rounded-3xl space-y-6">
           <h1 className="text-6xl font-semibold">

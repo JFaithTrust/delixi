@@ -11,7 +11,7 @@ import {
 
 const Home = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col top-[78px] relative">
       <div className="h-screen">
         <Slider />
       </div>

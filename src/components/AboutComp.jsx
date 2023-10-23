@@ -1,11 +1,14 @@
 import React from "react";
 import { about } from "../assets";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const AboutComp = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col h-screen w-full">
       <div className="flex flex-col items-center h-[20vh]">
-        <h1 className="font-bold text-2xl">Biz Haqimizda</h1>
+        <h1 className="font-bold text-2xl">{t("navbar.about_us")}</h1>
         <hr className="w-24 h-1 mx-auto my-2 bg-red-600 border-0 rounded md:my-4" />
         <p className="text-gray-500 dark:text-gray-400 text-center text-sm">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
@@ -38,9 +41,11 @@ const AboutComp = () => {
             </p>
           </div>
           <div className="absolute bottom-0 left-0">
-            <button className="py-2 px-4 bg-red-600 text-white rounded-md">
-              Batafsil
-            </button>
+            <Link to={'/about-us'}>
+              <button className="py-2 px-4 bg-red-600 text-white rounded-md">
+                Batafsil
+              </button>
+            </Link>
           </div>
         </div>
       </div>

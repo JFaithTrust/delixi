@@ -6,7 +6,7 @@ import { centerNew } from "../assets";
 
 const News = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col top-[78px] relative">
       <div className="flex justify-center items-start gap-10">
         <div className="flex flex-col basis-1/6">
           {newsTop.map((item) => (

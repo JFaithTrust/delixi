@@ -7,7 +7,7 @@ import { IoWallet } from 'react-icons/io5'
 
 const Contact = () => {
   return (
-    <div className="flex flex-col justify-center py-20 space-y-14">
+    <div className="flex flex-col justify-center py-20 space-y-14 top-[78px] relative">
       <h1 className="text-6xl font-bold text-center">
         O’zbekistondagi{" "}
         <span className="text-red-600">

@@ -6,7 +6,7 @@ const Branchs = () => {
 
 
   return (
-    <div>
+    <div className="top-[78px] relative">
       <div>
         <h1>{t("greeting")}</h1>
         <p>{t("welcome")}</p>

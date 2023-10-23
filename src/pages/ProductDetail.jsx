@@ -136,7 +136,7 @@ function ProductDetail() {
   };
 
   return (
-    <div>
+    <div className="top-[78px] relative">
       <div className="flex flex-col container mx-auto px-20 py-20 space-y-10">
         <div className="flex justify-between items-center">
           <div className="flex flex-col items-start">
