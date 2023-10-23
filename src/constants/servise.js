@@ -9,7 +9,7 @@ export const ProductService = {
                 image: product_1,
                 description: 'Product Description',
                 price: 65,
-                category: 'Accessories',
+                category: 'Power Supply',
                 rating: 5
             },
             {

@@ -21,7 +21,7 @@ const Comunity = () => {
       <div className="flex justify-between">
         {comunity.map((item) => (
           <div className="flex flex-col basis-1/6" key={item.url}>
-            <Link to={`/product-detail/${item.name.toLocaleLowerCase()}`} className="space-y-4">
+            <Link to={`/product-detail/${item.name.toLocaleLowerCase().replace(/\s/g, '')}`} className="space-y-4">
               <div className="bg-red-300 border-2 rounded-md border-red-600 p-4 m-2 h-[18vh] flex justify-center shadow-[0_0_50px_0] shadow-[#3478C8]">
                 <img src={item.url} alt="" />
               </div>

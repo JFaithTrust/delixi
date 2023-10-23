@@ -1,74 +1,8 @@
-// import React, { useEffect, useState } from "react";
-// import { FaFileDownload } from "react-icons/fa";
-// import { ProductService } from "../constants/servise";
-// import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-// const itemsPerPage = 10; // Number of items to display per page
-// const ProductDetail = () => {
-// const [products, setProducts] = useState([]);
-// useEffect(() => {
-//   ProductService.getProductsSmall().then((data) => setProducts(data));
-// }, []);
-
-// return (
-// <div className="flex flex-col container mx-auto px-20 py-20 space-y-10">
-//   <div className="flex justify-between items-center">
-//     <div className="flex flex-col items-start">
-//       <h1 className="font-bold text-2xl">Biz Haqimizda</h1>
-//       <hr className="w-24 h-1 my-2 bg-red-600 border-0 rounded" />
-//     </div>
-//     <div className="flex gap-2 items-center bg-red-600 text-white py-2 px-4 rounded cursor-pointer">
-//       <FaFileDownload />
-//       <p>Barcha maxsulotlar katalogini yuklab olish</p>
-//     </div>
-//   </div>
-//   <div className="grid grid-cols-4 gap-3 p-2">
-//     {products.map((product) => (
-//       <div className="p-4 border-2 border-red-600 rounded">
-//         <div className="flex flex-wrap items-center justify-between gap-2">
-//           <div className="flex items-center gap-2">
-//             <i className="pi pi-tag"></i>
-//             <span className="font-semibold">{product.category}</span>
-//           </div>
-//         </div>
-//         <div className="flex flex-col items-center gap-3 py-5">
-//           <img
-//             className="shadow-2 rounded"
-//             src={product.image}
-//             alt={product.name}
-//           />
-//           <div className="text-2xl font-bold">{product.name}</div>
-//         </div>
-//         <div className="flex items-center justify-between">
-//           <span className="text-2xl font-semibold">${product.price}</span>
-//         </div>
-//       </div>
-//     ))}
-//   </div>
-//   <div className="flex top-4 justify-center items-center h-[193px]">
-//     <div className="-translate-x-0 text-2xl p-2 bg-red-600 text-white cursor-pointer">
-//       <BsChevronCompactLeft size={20} />
-//     </div>
-//     {products.map((item, index) => (
-//       <div key={index} className="text-2xl cursor-pointer flex justify-center w-full">
-//         <div>{index + 1}</div>
-//       </div>
-//     ))}
-//     <div className="-translate-x-0 text-2xl p-2 bg-red-600 text-white cursor-pointer">
-//       <BsChevronCompactRight size={20} />
-//     </div>
-//   </div>
-// </div>
-
-//   );
-// };
-
-// export default ProductDetail;
-
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ProductService } from "../constants/servise"; // Import your data here
 import { FaFileDownload } from "react-icons/fa";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-
+import { useParams } from "react-router-dom";
 
 function ProductDetail() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -76,6 +10,31 @@ function ProductDetail() {
   const [sortCategory, setSortCategory] = useState("All");
   const products = ProductService.getProductsData();
   const [itemsPerPage, setItemsPerPage] = useState(8);
+
+  const { id } = useParams();
+
+  useEffect(() => {
+    switch (id) {
+      case "electricalmaterials":
+        setSortCategory("Electrical Materials");
+        break;
+      case "finaldistribution":
+        setSortCategory("Final Distribution");
+        break;
+      case "powerdistribution":
+        setSortCategory("Power Distribution");
+        break;
+      case "powermanagement":
+        setSortCategory("Power Management");
+        break;
+      case "powersupply":
+        setSortCategory("Power Supply");
+        break;
+      default:
+        setSortCategory("All");
+        break;
+    }
+  }, [id]);
 
   // Calculate the index range for the current page
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -94,6 +53,7 @@ function ProductDetail() {
   const sortedProducts = [...filteredProducts].sort((a, b) =>
     a.category.localeCompare(b.category)
   );
+
   const currentProducts = sortedProducts.slice(
     startIndex,
     startIndex + itemsPerPage
@@ -263,7 +223,11 @@ function ProductDetail() {
             </div>
           </div>
           <div>
-            <select value={itemsPerPage} onChange={handleItemsPerPageChange} className="py-1 w-32 border border-gray-500 text-gray-500 rounded-md">
+            <select
+              value={itemsPerPage}
+              onChange={handleItemsPerPageChange}
+              className="py-1 w-32 border border-gray-500 text-gray-500 rounded-md"
+            >
               <option value={8}>8 tadan</option>
               <option value={12}>12 tadan</option>
               <option value={16}>16 tadan</option>

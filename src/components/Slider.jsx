@@ -58,8 +58,8 @@ const Slider = () => {
 
 
       <div className="flex top-4 justify-center items-center h-[193px]">
-        <div className="-translate-x-0 text-2xl p-2 bg-red-600 text-white cursor-pointer h-[20vh] flex items-center w-[6vw] justify-center">
-          <BsChevronCompactLeft onClick={prevSlide} size={50} />
+        <div className="-translate-x-0 text-2xl p-2 bg-red-600 text-white cursor-pointer h-[20vh] flex items-center w-[6vw] justify-center" onClick={prevSlide}>
+          <BsChevronCompactLeft size={50} />
         </div>
         {slides.map((slide, slideIndex) => (
           <div
@@ -73,8 +73,8 @@ const Slider = () => {
             </div>
           </div>
         ))}
-        <div className="-translate-x-0 text-2xl p-2 bg-red-600 text-white cursor-pointer h-[20vh] flex items-center w-[6vw] justify-center">
-          <BsChevronCompactRight onClick={nextSlide} size={50} />
+        <div className="-translate-x-0 text-2xl p-2 bg-red-600 text-white cursor-pointer h-[20vh] flex items-center w-[6vw] justify-center" onClick={nextSlide}>
+          <BsChevronCompactRight size={50} />
         </div>
       </div>
     </div>
