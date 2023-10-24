@@ -120,48 +120,56 @@ export const comunity = [
 
 export const products = [
   {
+    proudct_id: 1,
     url: product_1,
     title: "Product name",
     description: "Some description",
     color: "Black",
   },
   {
+    proudct_id: 1,
     url: product_2,
     title: "Product name",
     description: "Some description",
     color: "Black",
   },
   {
+    proudct_id: 1,
     url: product_3,
     title: "Product name",
     description: "Some description",
     color: "Black",
   },
   {
+    proudct_id: 1,
     url: product_4,
     title: "Product name",
     description: "Some description",
     color: "Black",
   },
   {
+    proudct_id: 1,
     url: product_5,
     title: "Product name",
     description: "Some description",
     color: "Black",
   },
   {
+    proudct_id: 1,
     url: product_6,
     title: "Product name",
     description: "Some description",
     color: "Black",
   },
   {
+    proudct_id: 1,
     url: product_7,
     title: "Product name",
     description: "Some description",
     color: "Black",
   },
   {
+    proudct_id: 1,
     url: product_8,
     title: "Product name",
     description: "Some description",
@@ -233,46 +241,46 @@ export const testimonals = [
     name: "John Doe",
     job: "SEO Optimizer",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Kim o'ylab topgan bo'lsa ham baraka topsin. Menga juda yoqdi ishimizni ancha yengillashtirdi.",
   },
   {
     id: 2,
     name: "John Doe",
     job: "SEO Optimizer",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Kim o'ylab topgan bo'lsa ham baraka topsin. Menga juda yoqdi ishimizni ancha yengillashtirdi.",
   },
   {
     id: 3,
     name: "John Doe",
     job: "SEO Optimizer",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Kim o'ylab topgan bo'lsa ham baraka topsin. Menga juda yoqdi ishimizni ancha yengillashtirdi.",
   },
   {
     id: 4,
     name: "John Doe",
     job: "SEO Optimizer",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Kim o'ylab topgan bo'lsa ham baraka topsin. Menga juda yoqdi ishimizni ancha yengillashtirdi.",
   },
 ];
 
 export const contacts = [{
   name: 'INSTAGRAM',
-  icon: <AiFillInstagram className="bg-white text-rose-600 rounded-md p-0.5" fontSize={25} />
+  icon: <AiFillInstagram className="bg-white text-rose-600 rounded-md p-0.5" />
 },
 {
   name: 'TELEGRAM',
-  icon: <BiLogoTelegram className="bg-white text-sky-600 rounded-md p-0.5" fontSize={25} />
+  icon: <BiLogoTelegram className="bg-white text-sky-600 rounded-md p-0.5" />
 },
 {
   name: 'FACEBOOK',
-  icon: <BiLogoFacebook className="bg-white text-blue-700 rounded-md p-0.5" fontSize={25} />
+  icon: <BiLogoFacebook className="bg-white text-blue-700 rounded-md p-0.5" />
 },
 {
   name: 'YOUTUBE',
-  icon: <IoLogoYoutube className="bg-white text-red-600 rounded-md p-0.5" fontSize={25} />
+  icon: <IoLogoYoutube className="bg-white text-red-600 rounded-md p-0.5" />
 }]
 
 export const newsTop = [{

@@ -1,50 +1,31 @@
 import React from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Grid, Pagination, Navigation } from "swiper/modules";
+import { Grid } from "swiper/modules";
 import { products } from "../constants";
+import './slider.css'
 
-import "./create.css";
 
-// const PrevButton = () => {
-//    const swiper = useSwiper()
 
-//   return (
-//     <button onClick={() => swiper.slidePrev()} className="h-full"> Prev </button>
-//   )
-// }
-
-// const NextButton = () => {
-//   const swiper = useSwiper()
-
-//  return (
-//    <button onClick={() => swiper.slideNext()}> Next </button>
-//  )
-// }
-
-const Product = () => {
+const Product = ({pro_id}) => {
   return (
-    <div className="h-fit w-[50vw]">
+    <div className="h-fit">
       <Swiper
-        slidesPerView={3}
+        slidesPerView={4}
         grid={{
           rows: 2,
           fill: "row",
         }}
-        navigation={true}
         spaceBetween={5}
-        pagination={{
-          dynamicBullets: true,
-        }}
-        modules={[Grid, Pagination, Navigation]}
-        className="h-fit w-[40vw]"
+        modules={[Grid]}
+        className="h-fit 2xl:w-[45vw] xl:w-[45vw] lg:w-[60vw] w-[72vw]"
       >
-        {products.map((item) => (
+        {products.filter((item) => item.proudct_id === pro_id).map((item) => (
           <SwiperSlide
             className="flex flex-col border-2 border-red-600 p-2 rounded-md space-y-1"
             key={item.url}

@@ -35,7 +35,7 @@ const Navbar = () => {
           left: buttonRect.left,
         }}
       >
-        <div className="bg-red-600 text-white p-4 rounded-lg shadow-lg w-[40vw]">
+        <div className="bg-red-600 text-white p-4 rounded-lg shadow-lg 2xl:w-[40vw] xl:[40vw] md:[40vw] left-0">
           {children}
         </div>
       </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
             </button>
             <OverlayPanel isOpen={isPanelOpen} buttonRef={buttonRef}>
               <div className="flex justify-start items-center gap-4">
-                <div className="flex flex-col space-y-4 border-4 border-white rounded-lg py-5 px-3 basis-3/5">
+                <div className="flex flex-col space-y-4 border-4 border-white rounded-lg py-5 px-3 2xl:basis-3/5 xl:3/5 basis-full ">
                   {comunity.map((item) => (
                     <div
                       className={`flex items-center border-2 hover:border-blue-500 rounded-md py-2 px-5 gap-3 cursor-pointer ${
@@ -97,7 +97,7 @@ const Navbar = () => {
                     </div>
                   ))}
                 </div>
-                <div className="border border-white h-[74vh] rounded-lg px-4 basis-2/5">
+                <div className="border border-white h-[74vh] rounded-lg px-4 basis-2/5 2xl:block xl:block hidden">
                   {comunity
                     .filter((item) => item.id === selectedId)
                     .map((el) => (

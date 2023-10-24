@@ -1,0 +1,18 @@
+Default grid styles .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Adjust grid layout for screens with a width of 768px or more */
+@media (min-width: 640px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Adjust grid layout for screens with a width of 1024px or more */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -3,11 +3,13 @@ import { testimonals } from "../constants";
 
 const Testimonals = () => {
   return (
-    <div className="mx-auto container flex flex-col px-20 space-y-6">
-      <div className="flex flex-col items-center h-[20vh]">
-        <h1 className="font-bold text-2xl">Mijozlarimiz fikrlari</h1>
-        <hr className="w-24 h-1 mx-auto my-2 bg-red-600 border-0 rounded md:my-4" />
-        <p className="text-gray-500 dark:text-gray-400 text-center text-sm">
+    <div className="mx-auto container flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12">
+      <div className="flex flex-col items-center h-[20vh] sm:h-[20vh] md:h-[20vh] lg:h-[20vh] xl:h-[20vh]">
+        <h1 className="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+          Mijozlarimiz fikrlari
+        </h1>
+        <hr className="w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-1.5 rounded-md mx-auto my-2 bg-red-600" />
+        <p className="text-gray-500 dark:text-gray-400 text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
           atque quidem, dicta enim eveniet iste culpa, blanditiis iusto et, cum{" "}
           explicabo quibusdam fugit eligendi ipsa sunt dolorem. Animi dolorem
@@ -16,10 +18,10 @@ const Testimonals = () => {
           doloremque culpa?
         </p>
       </div>
-      <div className="flex gap-20">
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
         {testimonals.map((item) => (
           <div
-            className="flex flex-col bg-red-200 rounded-md py-4 px-3 space-y-4"
+            className="flex flex-col bg-red-200 rounded-md py-2 sm:py-4 md:py-6 lg:py-8 xl:py-10 px-2 sm:px-3 md:px-4 lg:px-5 xl:px-6 space-y-2 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10"
             key={item.id}
           >
             <div>
@@ -78,10 +80,16 @@ const Testimonals = () => {
               </svg>
             </div>
             <div className="flex flex-col">
-              <h1 className="text-lg font-semibold">{item.name}</h1>
-              <p className="text-blue-400">{item.job}</p>
+              <h1 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-semibold">
+                {item.name}
+              </h1>
+              <p className="text-blue-400 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                {item.job}
+              </p>
             </div>
-            <p className="text-sm">{item.description}</p>
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+              {item.description}
+            </p>
           </div>
         ))}
       </div>

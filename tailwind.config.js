@@ -8,6 +8,13 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/images/hero.png')",
       },
+      screens: {
+        'xs': '495px',
+        'sm': '640px',  // Set custom pixel value for sm
+        'md': '768px',  // Set custom pixel value for md
+        'lg': '1024px', // Set custom pixel value for lg
+        'xl': '1280px', // Set custom pixel value for xl
+      },
     },
   },
   plugins: [],

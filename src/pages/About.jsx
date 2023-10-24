@@ -5,11 +5,11 @@ import { Statistics, Testimonals, AboutComp } from "../components";
 const About = () => {
   return (
     <div className="top-[78px] relative">
-      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center h-[600px] flex justify-center items-center gap-20">
+      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center h-[600px] flex justify-center items-center 2xl:gap-20 xl:gap-10 lg:gap-10">
         <div className="bg-black/80 text-white px-6 py-4 border-4 border-red-600 rounded-3xl space-y-6">
-          <h1 className="text-6xl font-semibold">
+          <h1 className="2xl:text-6xl xl:text-5xl lg:text-4xl text-4xl font-semibold">
             Istalgan <span className="text-red-600">Mahsulotimizga</span> Online{" "}
-            <br /> <span className="text-red-600">Buyurtma</span> qilish imkoni
+            <br className="2xl:block xl:block lg:block md:block hidden" /> <span className="text-red-600">Buyurtma</span> qilish imkoni
             bor.
           </h1>
           <p>
@@ -20,7 +20,7 @@ const About = () => {
             Aloqa
           </button>
         </div>
-        <div className="bg-black/80 p-14 border-2 border-red-600 rounded-3xl">
+        <div className="bg-black/80 p-14 border-2 border-red-600 rounded-3xl 2xl:block xl:block lg:block hidden">
           <svg
             width="337"
             height="351"
@@ -1124,19 +1124,10 @@ const About = () => {
       </div>
       <div className="flex flex-col">
         <div className="flex mt-16 justify-center gap-28">
-          <div className="flex flex-col basis-1/4 justify-between">
+          <div className="flex flex-col basis-1/4 justify-around">
             <h1 className="font-semibold text-3xl">
               Build the right team to scale
             </h1>
-            <p>
-              Finding the right talent is not easy. We help you find the talent
-              that suits your needs, follows your processes, and sticks with you
-              long term (not the case with freelancers
-            </p>
-            <p>
-              Our <span className="text-red-600">delivery model</span> helps you
-              cut costs and deliver within budget.
-            </p>
             <div className="text-red-600 px-4 border-l-4 border-red-600">
               "Simform is quick to identify larger problem with the Software so
               we decided to expand our scope to build new modules"
@@ -1161,19 +1152,10 @@ const About = () => {
           <div className="basis-1/4">
             <img src={about_2} alt="about_1.jpg" className="w-fit h-fit" />
           </div>
-          <div className="flex flex-col basis-1/4 justify-between">
+          <div className="flex flex-col basis-1/4 justify-around">
             <h1 className="font-semibold text-3xl">
               Build the right team to scale
             </h1>
-            <p>
-              Finding the right talent is not easy. We help you find the talent
-              that suits your needs, follows your processes, and sticks with you
-              long term (not the case with freelancers
-            </p>
-            <p>
-              Our <span className="text-red-600">delivery model</span> helps you
-              cut costs and deliver within budget.
-            </p>
             <div className="text-red-600 px-4 border-l-4 border-red-600">
               "Simform is quick to identify larger problem with the Software so
               we decided to expand our scope to build new modules"
@@ -1192,19 +1174,10 @@ const About = () => {
           </div>
         </div>
         <div className="flex my-16 justify-center gap-28">
-          <div className="flex flex-col basis-1/4 justify-between">
+          <div className="flex flex-col basis-1/4 justify-around">
             <h1 className="font-semibold text-3xl">
               Build the right team to scale
             </h1>
-            <p>
-              Finding the right talent is not easy. We help you find the talent
-              that suits your needs, follows your processes, and sticks with you
-              long term (not the case with freelancers
-            </p>
-            <p>
-              Our <span className="text-red-600">delivery model</span> helps you
-              cut costs and deliver within budget.
-            </p>
             <div className="text-red-600 px-4 border-l-4 border-red-600">
               "Simform is quick to identify larger problem with the Software so
               we decided to expand our scope to build new modules"
