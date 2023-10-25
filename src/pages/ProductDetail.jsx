@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ProductService } from "../constants/servise"; // Import your data here
 import { FaFileDownload } from "react-icons/fa";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Rating } from 'primereact/rating'
 
 function ProductDetail() {
@@ -99,22 +99,22 @@ function ProductDetail() {
   return (
     <div className="top-[78px] relative">
       <div className="flex flex-col container mx-auto px-20 pt-20 pb-40 space-y-10">
-        <div className="flex justify-between items-center">
+        <div className="flex 2xl:flex-row md:flex-row flex-col justify-between items-center 2xl:gap-0 md:gap-0 gap-5">
           <div className="flex flex-col items-start">
             <h1 className="font-bold text-2xl">Biz Haqimizda</h1>
-            <hr className="w-24 h-1 my-2 bg-red-600 border-0 rounded" />
+            <hr className="w-24 h-1 my-2 2xl:ml-0 md:ml-0 ml-8 bg-red-600 border-0 rounded" />
           </div>
           <div className="flex gap-2 items-center bg-red-600 text-white py-2 px-4 rounded cursor-pointer">
             <FaFileDownload />
-            <p>Barcha maxsulotlar katalogini yuklab olish</p>
+            <p className="2xl:text-base sm:text-base text-sm">Barcha maxsulotlar katalogini yuklab olish</p>
           </div>
         </div>
-        <div className="flex justify-between bg-red-100 py-2 px-3 rounded-lg border border-red-300 items-center">
-          <div className="basis-1/3">
+        <div className="flex 2xl:flex-row sm:flex-row flex-col justify-between bg-red-100 py-2 px-3 rounded-lg border border-red-300 items-center 2xl:gap-0 sm:gap-0 gap-3">
+          <div className="2xl:basis-1/3 lg:basis-1/3 basis-full w-full">
             <select
               value={sortCategory}
               onChange={handleCategoryChange}
-              className="bg-transparent border border-red-300 rounded-md focus:ring-red-600 focus:border-red-600 block py-1.5 w-1/2"
+              className="bg-transparent border border-red-300 rounded-md focus:ring-red-600 focus:border-red-600 block py-1.5 2xl:w-1/2 md:w-1/2 w-full"
             >
               <option value="All">All Categories</option>
               {Array.from(
@@ -130,7 +130,7 @@ function ProductDetail() {
               ))}
             </select>
           </div>
-          <div className="relative">
+          <div className="relative 2xl:w-fit xs:w-fit w-4/5">
             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <svg
                 class="w-4 h-4 text-gray-500 dark:text-gray-400"
@@ -153,13 +153,13 @@ function ProductDetail() {
               placeholder="Search by product name"
               value={searchQuery}
               onChange={handleSearchChange}
-              className="py-1.5 px-3 bg-transparent border border-red-300 rounded-md pl-10 active:border-blue-500 focus:border-blue-500"
+              className="py-1.5 px-3 bg-transparent border border-red-300 rounded-md pl-10 active:border-blue-500 focus:border-blue-500 2xl:w-fit xs:w-fit w-full"
             />
           </div>
         </div>
         <div className="grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-3 p-2">
           {currentProducts.map((product) => (
-            <div className="p-4 border-2 border-red-600 rounded">
+            <Link className="p-4 border-2 border-red-600 rounded" to={`/detail/${product.id}`} key={product.id}>
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <div className="flex items-center gap-2">
                   <i className="pi pi-tag"></i>
@@ -177,11 +177,11 @@ function ProductDetail() {
               <div className="flex items-center justify-center">
                 <Rating className="gap-2 text-red-600" value={product.rating} readOnly cancel={false}></Rating>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
-        <div className="flex justify-between px-2">
-          <div className="text-gray-500">
+        <div className="flex 2xl:flex-row sm:flex-row flex-col 2xl:justify-between sm:justify-between justify-center 2xl:gap-0 sm:gap-0 gap-6 px-2">
+          <div className="text-gray-500 text-center">
             Jami: {sortedProducts.length} ta mahsulot
           </div>
           <div className="flex justify-center items-center">
@@ -223,7 +223,7 @@ function ProductDetail() {
               <BsChevronCompactRight size={20} />
             </div>
           </div>
-          <div>
+          <div className="flex 2xl:justify-end sm:justify-end justify-center">
             <select
               value={itemsPerPage}
               onChange={handleItemsPerPageChange}

@@ -7,7 +7,7 @@ export const ProductService = {
                 id: 1,
                 name: 'Beat',
                 image: product_1,
-                description: 'Product Description',
+                description: 'Our membership management software provides full automation of membership renewals and payments',
                 price: 65,
                 category: 'Power Supply',
                 rating: 5
