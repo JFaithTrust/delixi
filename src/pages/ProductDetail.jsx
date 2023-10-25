@@ -3,6 +3,7 @@ import { ProductService } from "../constants/servise"; // Import your data here
 import { FaFileDownload } from "react-icons/fa";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { useParams } from "react-router-dom";
+import { Rating } from 'primereact/rating'
 
 function ProductDetail() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -97,7 +98,7 @@ function ProductDetail() {
 
   return (
     <div className="top-[78px] relative">
-      <div className="flex flex-col container mx-auto px-20 py-20 space-y-10">
+      <div className="flex flex-col container mx-auto px-20 pt-20 pb-40 space-y-10">
         <div className="flex justify-between items-center">
           <div className="flex flex-col items-start">
             <h1 className="font-bold text-2xl">Biz Haqimizda</h1>
@@ -156,7 +157,7 @@ function ProductDetail() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-3 p-2">
+        <div className="grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-3 p-2">
           {currentProducts.map((product) => (
             <div className="p-4 border-2 border-red-600 rounded">
               <div className="flex flex-wrap items-center justify-between gap-2">
@@ -171,10 +172,10 @@ function ProductDetail() {
                   src={product.image}
                   alt={product.name}
                 />
-                <div className="text-2xl font-bold">{product.name}</div>
+                <div className="text-2xl font-bold text-center">{product.name}</div>
               </div>
-              <div className="flex items-center justify-between">
-                <span className="text-2xl font-semibold">${product.price}</span>
+              <div className="flex items-center justify-center">
+                <Rating className="gap-2 text-red-600" value={product.rating} readOnly cancel={false}></Rating>
               </div>
             </div>
           ))}

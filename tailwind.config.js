@@ -9,6 +9,7 @@ module.exports = {
         "hero-pattern": "url('/src/assets/images/hero.png')",
       },
       screens: {
+        'xxs': '382px',
         'xs': '495px',
         'sm': '640px',  // Set custom pixel value for sm
         'md': '768px',  // Set custom pixel value for md

@@ -15,13 +15,13 @@ const Home = () => {
       <div className="2xl:h-[900px] xl:h-[900px] lg:h-[800px] md:h-[750px] sm:h-[680px] h-[650px]">
         <Slider />
       </div>
-      <div className="container mx-auto px-20">
+      <div className="container mx-auto 2xl:px-20 xl:px-20 lg:px-20 md:px-20 sm:px-20 px-0">
         <AboutComp />
       </div>
-      <div className="container mx-auto px-20">
+      <div className="2xl:container 2xl:mx-auto xl:container xl:mx-auto lg:container lg:mx-auto px-20">
         <Comunity />
       </div>
-      <div className="bg-red-100 px-20 my-10">
+      <div className="bg-red-100 2xl:px-20 xl:px-20 lg:px-20 md:px-20 px-10 my-10">
         <Catalog />
       </div>
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
@@ -36,7 +36,7 @@ const Home = () => {
             </div>
           </div>
           <div className="flex flex-col mt-4 sm:mt-6 md:mt-8 lg:mt-10 xl:mt-12">
-            <p className="text-center">
+            <p className="text-center 2xl:text-base xl:text-base lg:text-base md:text-base text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Recusandae quibusdam magnam ex maxime, autem nobis sint, atque
               dolor sunt quos <br />
@@ -50,7 +50,7 @@ const Home = () => {
       <div className="bg-red-100 2xl:px-20 xl:px-20 lg:px-20 px-0 my-10 py-20">
         <News />
       </div>
-      <div className="my-10 py-20">
+      <div className="mb-10 pb-20">
         <Testimonals />
       </div>
     </div>

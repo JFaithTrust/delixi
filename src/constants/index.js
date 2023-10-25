@@ -6,6 +6,7 @@ import {
   catalog_5,
   newBotoom_1,
   newBotoom_2,
+  newBotoom_3,
   news_1,
   news_2,
   news_3,
@@ -308,7 +309,27 @@ export const newsTop = [
     view: 22234,
     description:
       "Risus fringilla curabitur dui nibh ipsum velit lacus. Integer morbi massa libero ultrices elit congue ac orci.",
+  },{
+    id: 4,
+    date: "09:49 / 23.05.2023",
+    view: 22234,
+    description:
+      "Risus fringilla curabitur dui nibh ipsum velit lacus. Integer morbi massa libero ultrices elit congue ac orci.",
   },
+  {
+    id: 5,
+    date: "09:49 / 23.05.2023",
+    view: 22234,
+    description:
+      "Risus fringilla curabitur dui nibh ipsum velit lacus. Integer morbi massa libero ultrices elit congue ac orci.",
+  },
+  {
+    id: 6,
+    date: "09:49 / 23.05.2023",
+    view: 22234,
+    description:
+      "Risus fringilla curabitur dui nibh ipsum velit lacus. Integer morbi massa libero ultrices elit congue ac orci.",
+  }
 ];
 
 export const newsBottom = [
@@ -324,6 +345,14 @@ export const newsBottom = [
   {
     id: 2,
     url: newBotoom_2,
+    title: "Battlegrounds Mobile India iOS release date",
+    description:
+      "The reason behind their disappointment is that iPhone users have beenThe reason behind their disappointment is that iPhone users have been.",
+    date: 156514,
+    view: 42,
+  },{
+    id: 3,
+    url: newBotoom_3,
     title: "Battlegrounds Mobile India iOS release date",
     description:
       "The reason behind their disappointment is that iPhone users have beenThe reason behind their disappointment is that iPhone users have been.",
