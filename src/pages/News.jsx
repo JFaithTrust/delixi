@@ -68,7 +68,7 @@ const News = () => {
           ))}
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-6 container mx-auto py-20 px-20">
+      <div className="grid grid-cols-2 gap-6 container mx-auto pt-20 pb-40 px-20">
         {newsBottom.map((item) => (
           <div className="flex col-span-1 items-center gap-5" key={item.id}>
             <div>

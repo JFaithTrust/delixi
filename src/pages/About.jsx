@@ -1199,7 +1199,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="2xl:flex xl:flex lg:flex md:flex sm:flex hidden 2xl:flex-row xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col mt-16 justify-center gap-28">
           <div className="flex flex-col 2xl:basis-1/4 xl:basis-1/4 lg:basis-1/4 md:basis-1/3 sm:basis-1/2 basis-full space-y-4">
             <h1 className="font-semibold 2xl:text-3xl xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl text-lg">
@@ -1267,7 +1267,7 @@ const About = () => {
         </div>
         <Statistics />
       </div>
-      <div className="container mx-auto px-20 mt-20 ">
+      <div className="container mx-auto px-20">
         <AboutComp />
       </div>
       <div className="px-20 my-10">

@@ -5,14 +5,17 @@ import Product from "./Product";
 import { Link } from "react-router-dom";
 
 const Catalog = () => {
-  const [id, setId] = useState(1)
+  const [id, setId] = useState(1);
   return (
     <div className="h-fit container mx-auto my-20 flex flex-col space-y-4 2xl:px-20 xl:px-20 lg:px-20 px-0">
       <div className="flex justify-between items-center">
         <h1 className="font-bold text-xl">
           Quyidagilarni ko'rish uchun katalog
         </h1>
-        <Link to={'/product-detail/all'} className="flex gap-2 items-center cursor-pointer">
+        <Link
+          to={"/product-detail/all"}
+          className="flex gap-2 items-center cursor-pointer"
+        >
           <p>To'liq ko'rish</p>
           <BsArrowRight />
         </Link>
@@ -25,15 +28,27 @@ const Catalog = () => {
               key={item.url}
               onClick={() => setId(item.id)}
             >
-              <div className={`p-4 border-2 rounded-md border-red-600 items-center transition-all duration-700 ease-in-out ${id === item.id ? '2xl:h-[15vh] xl:h-[10vh] lg:h-[8vh] md:h-[6vh] h-[10vh] block' : 'hidden'}`}>
-                <img src={item.url} alt="" className="object-center w-full h-full" />
+              <div
+                className={`p-4 border-2 rounded-md border-red-600 items-center transition-all duration-700 ease-in-out ${
+                  id === item.id
+                    ? "2xl:h-[15vh] xl:h-[10vh] lg:h-[8vh] md:h-[6vh] h-[10vh] block"
+                    : "hidden"
+                }`}
+              >
+                <img
+                  src={item.url}
+                  alt=""
+                  className="object-center w-full h-full"
+                />
               </div>
               <h1 className="text-center font-semibold py-1.5">{item.name}</h1>
             </div>
           ))}
         </div>
-        <div className="border-2 border-red-300 rounded-md px-2 py-8 flex flex-col items-center mt-20 space-y-3 2xl:w-[50vw] xl:w-[50vw] w-full">
-          <h1 className="font-semibold text-xl text-red-600">Some Infor For Product Type “Name_Of_Project_Type”</h1>
+        <div className="border-2 border-red-300 rounded-md px-2 py-8 flex flex-col items-center mt-20 space-y-3">
+          <h1 className="font-semibold text-xl text-red-600">
+            Some Infor For Product Type “Name_Of_Project_Type”
+          </h1>
           <Product pro_id={id} />
         </div>
       </div>
