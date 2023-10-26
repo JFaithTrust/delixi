@@ -29,7 +29,7 @@ function Map() {
   }
 
   return (
-    <div className="top-[78px] relative">
+    <div className="top-[78px] relative pb-20">
       <GoogleMap
         zoom={15}
         center={center}

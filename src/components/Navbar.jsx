@@ -22,20 +22,31 @@ const Navbar = () => {
     i18n.changeLanguage(event.target.value);
   };
 
-  const OverlayPanel = ({ isOpen, children, buttonRef }) => {
+  const OverlayPanel = ({ isOpen, children, buttonRef, isMobile }) => {
     if (!isOpen) return null;
 
     const buttonRect = buttonRef.current.getBoundingClientRect();
 
+    const mobileStyles = {
+      top: buttonRect.bottom + 25,
+      left: 0,
+    };
+
+    const desktopStyles = {
+      top: buttonRect.bottom + 25,
+      left: buttonRect.left,
+    };
+
+    const chosenStyles = isMobile ? mobileStyles : desktopStyles;
+
     return (
       <div
-        className="fixed z-50"
+        className={`fixed z-50`}
         style={{
-          top: buttonRect.bottom + 25,
-          left: buttonRect.left,
+          ...chosenStyles
         }}
       >
-        <div className="bg-red-600 text-white p-4 rounded-lg shadow-lg 2xl:w-[40vw] xl:[40vw] md:[40vw] left-0">
+        <div className="bg-red-600 text-white 2xl:p-4 xl:p-4 p-2 rounded-lg shadow-lg 2xl:h-[650px] xl:h-[650px] md:h-[570px] h-[530px]">
           {children}
         </div>
       </div>
@@ -96,30 +107,36 @@ const Navbar = () => {
               {t("catalog")}
               <RxTextAlignBottom className="text-red-600" />
             </button>
-            <OverlayPanel isOpen={isPanelOpen} buttonRef={buttonRef}>
-              <div className="flex justify-start items-center gap-4">
-                <div className="flex flex-col space-y-4 border-4 border-white rounded-lg py-5 px-3 2xl:basis-3/5 xl:3/5 basis-full ">
+            <OverlayPanel
+              isOpen={isPanelOpen}
+              buttonRef={buttonRef}
+              isMobile={window.innerWidth < 640}
+            >
+              <div className="flex justify-start items-start gap-4">
+                <div className="flex flex-col 2xl:space-y-4 xl:space-y-4 space-y-2 2xl:border-4 xl:border-4 border-2 border-white rounded-lg 2xl:py-5 xl:py-5 py-2 px-3">
                   {comunity.map((item) => (
                     <div
-                      className={`flex items-center border-2 hover:border-blue-500 rounded-md py-2 px-5 gap-3 cursor-pointer ${
+                      className={`flex items-center border-2 hover:border-blue-500 rounded-md 2xl:py-2 md:py-2 py-1 2xl:px-5 md:px-5 px-3 gap-3 cursor-pointer ${
                         item.id === selectedId
                           ? "border-blue-500"
                           : "border-white"
                       } `}
                       onClick={() => setSelectedId(item.id)}
                     >
-                      <div className="border-2 rounded-lg border-blue-500 w-[150px] h-[100px]">
+                      <div className="border-2 rounded-lg border-blue-500 2xl:w-[130px] xl:w-[130px] w-[110px] 2xl:h-[80px] xl:h-[80px] h-[80px]">
                         <img
                           src={item.url}
                           alt=""
                           className="object-center w-full h-full"
                         />
                       </div>
-                      <h1 className="text-xl font-semibold">{item.name}</h1>
+                      <h1 className="2xl:text-xl md:text-xl text-lg font-semibold">
+                        {item.name}
+                      </h1>
                     </div>
                   ))}
                 </div>
-                <div className="border border-white h-[74vh] rounded-lg px-4 basis-2/5 2xl:block xl:block hidden">
+                <div className="border border-white h-[610px] rounded-lg px-4 w-[300px] 2xl:block xl:block hidden">
                   {comunity
                     .filter((item) => item.id === selectedId)
                     .map((el) => (

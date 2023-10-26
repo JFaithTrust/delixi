@@ -2,6 +2,7 @@ import React from "react";
 import { news } from "../constants";
 import { CiCalendarDate } from "react-icons/ci";
 import { GrFormView } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 const News = () => {
   return (
@@ -14,9 +15,10 @@ const News = () => {
       </div>
       <div className="flex flex-wrap justify-center">
         {news.map((item) => (
-          <div
+          <Link
             className="flex basis-11/12 sm:basis-6/12 md:basis-5/12 lg:basis-6/12 xl:basis-5/12 p-2 m-2 rounded-lg bg-red-300 space-x-2 sm:space-x-4 items-center"
             key={item.url}
+            to={`/news-detail/${item.id}`}
           >
             <div>
               <img src={item.url} alt="" className="rounded-lg" />
@@ -39,7 +41,7 @@ const News = () => {
                 {item.description}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

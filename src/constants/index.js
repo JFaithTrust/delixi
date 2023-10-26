@@ -197,39 +197,43 @@ export const statistics = [
 
 export const news = [
   {
+    id: 1,
     url: news_1,
     title:
       "Maria Doe It is a long established fact that a reader will be distracted",
     description:
       "Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.",
-    date: 325,
+    date: "09:49 / 23.05.2023",
     view: 325,
   },
   {
+    id: 2,
     url: news_2,
     title:
       "Maria Doe It is a long established fact that a reader will be distracted",
     description:
       "Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.",
-    date: 325,
+    date: "09:49 / 23.05.2023",
     view: 325,
   },
   {
+    id: 3,
     url: news_3,
     title:
       "Maria Doe It is a long established fact that a reader will be distracted",
     description:
       "Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.",
-    date: 325,
+    date: "09:49 / 23.05.2023",
     view: 325,
   },
   {
+    id: 4,
     url: news_4,
     title:
       "Maria Doe It is a long established fact that a reader will be distracted",
     description:
       "Thank you for the fastest service ever, I liked how everything in the house was ready on time in the house was ready on time.",
-    date: 325,
+    date: "09:49 / 23.05.2023",
     view: 325,
   },
 ];
@@ -309,7 +313,8 @@ export const newsTop = [
     view: 22234,
     description:
       "Risus fringilla curabitur dui nibh ipsum velit lacus. Integer morbi massa libero ultrices elit congue ac orci.",
-  },{
+  },
+  {
     id: 4,
     date: "09:49 / 23.05.2023",
     view: 22234,
@@ -329,7 +334,7 @@ export const newsTop = [
     view: 22234,
     description:
       "Risus fringilla curabitur dui nibh ipsum velit lacus. Integer morbi massa libero ultrices elit congue ac orci.",
-  }
+  },
 ];
 
 export const newsBottom = [
@@ -350,7 +355,8 @@ export const newsBottom = [
       "The reason behind their disappointment is that iPhone users have beenThe reason behind their disappointment is that iPhone users have been.",
     date: 156514,
     view: 42,
-  },{
+  },
+  {
     id: 3,
     url: newBotoom_3,
     title: "Battlegrounds Mobile India iOS release date",
