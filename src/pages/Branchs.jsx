@@ -8,6 +8,26 @@ function Map() {
     []
   );
 
+  function CustomMarker({ position, text }) {
+    return (
+      <>
+        <Marker position={position} />
+        <div
+          style={{
+            position: "absolute",
+            transform: "translate(-50%, -100%)", // Center text above the marker
+            backgroundColor: "white",
+            padding: "5px",
+            borderRadius: "5px",
+            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
+          }}
+        >
+          {text}
+        </div>
+      </>
+    );
+  }
+
   return (
     <div className="top-[78px] relative">
       <GoogleMap
@@ -15,7 +35,7 @@ function Map() {
         center={center}
         mapContainerClassName="map-container"
       >
-        <Marker position={center} />
+        <CustomMarker position={center} text="Custom Text" />
       </GoogleMap>
     </div>
   );
