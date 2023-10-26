@@ -31,7 +31,7 @@ const Navbar = () => {
       <div
         className="fixed z-50"
         style={{
-          top: buttonRect.bottom + 25, // Adjust the top position as needed
+          top: buttonRect.bottom + 25,
           left: buttonRect.left,
         }}
       >
@@ -42,14 +42,36 @@ const Navbar = () => {
     );
   };
 
+  const closedPanel = () => {
+    togglePanel();
+    setShowMobileNav(false);
+  };
+
+  const burgerPanel = () => {
+    setShowMobileNav(!showMobileNav);
+    setIsPanelOpen(false);
+  };
+
   const mobileNavLinks = (
-    <div className="fixed top-[78px] right-0 h-full w-[20vw] bg-white z-50 p-4">
+    <div className="fixed top-[78px] right-0 h-full w-[200px] bg-white z-50 p-4">
       <div className="flex flex-col gap-4">
-        <NavLink to={"/"} onClick={() => setShowMobileNav(false)}>{t("navbar.main_page")}</NavLink>
-        <NavLink to={"/about-us"} onClick={() => setShowMobileNav(false)}>{t("navbar.about_us")}</NavLink>
-        <NavLink to={"/branchs"} onClick={() => setShowMobileNav(false)}>{t("navbar.branchs")}</NavLink>
-        <NavLink to={"/news"} onClick={() => setShowMobileNav(false)}>{t("navbar.news")}</NavLink>
-        <Link to={"/contact"} className="w-full">
+        <NavLink to={"/"} onClick={() => setShowMobileNav(false)}>
+          {t("navbar.main_page")}
+        </NavLink>
+        <NavLink to={"/about-us"} onClick={() => setShowMobileNav(false)}>
+          {t("navbar.about_us")}
+        </NavLink>
+        <NavLink to={"/branchs"} onClick={() => setShowMobileNav(false)}>
+          {t("navbar.branchs")}
+        </NavLink>
+        <NavLink to={"/news"} onClick={() => setShowMobileNav(false)}>
+          {t("navbar.news")}
+        </NavLink>
+        <Link
+          to={"/contact"}
+          className="w-full"
+          onClick={() => setShowMobileNav(false)}
+        >
           <button className="bg-red-600 text-white py-2 px-6 rounded-md shadow-[0_0_50px_0] shadow-[#3478C8] w-full mt-5">
             {t("contact")}
           </button>
@@ -61,13 +83,13 @@ const Navbar = () => {
   return (
     <div className="border-b-2 border-red-600 w-full flex items-center top-0 z-50 bg-white fixed">
       <div className="flex container mx-auto py-4 items-center justify-between">
-        <div className="flex items-center gap-10">
+        <div className="flex items-center 2xl:gap-10 xs:gap-10 gap-3">
           <Link to="/">
             <img src={logo} alt="logo" />
           </Link>
           <div className="text-xl font-semibold">
             <button
-              onClick={togglePanel}
+              onClick={closedPanel}
               className="flex items-center gap-2"
               ref={buttonRef}
             >
@@ -138,7 +160,7 @@ const Navbar = () => {
               {t("navbar.news")}
             </NavLink>
           </div>
-          <div className="flex gap-6 items-center">
+          <div className="flex 2xl:gap-6 xs:gap-6 gap-3 items-center">
             <div className="flex gap-2 text-red-600">
               <RiTranslate
                 className="bg-red-300 p-0.5 border border-red-600 rounded-md"
@@ -158,7 +180,7 @@ const Navbar = () => {
             <div className="2xl:hidden xl:hidden block">
               <button
                 className="text-xl font-semibold text-red-600 bg-red-300 border border-red-600 rounded-md p-1"
-                onClick={() => setShowMobileNav(!showMobileNav)}
+                onClick={burgerPanel}
               >
                 <RxHamburgerMenu />
               </button>

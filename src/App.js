@@ -1,7 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Footer, Navbar } from "./components";
-import { About, Branchs, Contact, Detail, Home, News, NewsDetail, ProductDetail } from "./pages";
+import {
+  About,
+  Branchs,
+  Contact,
+  Detail,
+  Home,
+  News,
+  NewsDetail,
+  ProductDetail,
+} from "./pages";
 
 function App() {
   return (

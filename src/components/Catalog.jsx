@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 
 const Catalog = () => {
   const [id, setId] = useState(1);
+  function scrollToTop() {
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }
   return (
     <div className="h-fit container mx-auto my-20 flex flex-col space-y-4 2xl:px-20 xl:px-20 lg:px-20 px-0">
       <div className="flex justify-between items-center">
@@ -15,6 +19,7 @@ const Catalog = () => {
         <Link
           to={"/product-detail/all"}
           className="flex gap-2 items-center cursor-pointer"
+          onClick={scrollToTop}
         >
           <p>To'liq ko'rish</p>
           <BsArrowRight />

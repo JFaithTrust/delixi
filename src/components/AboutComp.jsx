@@ -3,6 +3,11 @@ import { about } from "../assets";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
+function scrollToTop() {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+}
+
 const AboutComp = () => {
   const { t } = useTranslation();
   return (
@@ -45,7 +50,7 @@ const AboutComp = () => {
             </p>
           </div>
           <div className="2xl:absolute xl:absolute lg:absolute md:absolute sm:absolute relative bottom-0 left-0">
-            <Link to={"/about-us"}>
+            <Link to={"/about-us"} onClick={scrollToTop}>
               <button className="py-2 px-4 bg-red-600 text-white rounded-md">
                 Batafsil
               </button>
