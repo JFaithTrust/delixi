@@ -5,6 +5,7 @@ import { RiTranslate } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { comunity } from "../constants";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const { i18n } = useTranslation();
@@ -150,7 +151,7 @@ const Navbar = () => {
             </OverlayPanel>
           </div>
         </div>
-        <div className="flex gap-10 text-xl font-semibold items-center">
+        <motion.div initial={{ y: -250 }} animate={{ y: 0 }} transition={{ delay: 0.2, type: 'spring', stiffness: 30 }} className="flex gap-10 text-xl font-semibold items-center">
           <div className="2xl:flex xl:flex hidden gap-10">
             <NavLink
               to={"/"}
@@ -209,7 +210,7 @@ const Navbar = () => {
               </button>
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

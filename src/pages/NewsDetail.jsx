@@ -1,5 +1,5 @@
 import React from "react";
-import { centerNew, newsDetail } from "../assets";
+import { newsDetail } from "../assets";
 import { news } from "../constants";
 import { AiOutlineEye } from "react-icons/ai";
 import { FaCalendarDays } from "react-icons/fa6";

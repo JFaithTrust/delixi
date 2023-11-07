@@ -57,7 +57,7 @@ const Slider = () => {
 
       <div className="flex top-4 justify-center items-center">
         <div
-          className="-translate-x-0 text-2xl p-2 bg-red-600 text-white cursor-pointer 2xl:h-[20vh] xl:h-[20vh] lg:h-[20vh] md:h-[15vh] h-[10vh] flex items-center w-[6vw] justify-center"
+          className="-translate-x-0 text-2xl p-2 bg-red-600 text-white cursor-pointer 2xl:h-[20vh] xl:h-[20vh] lg:h-[20vh] md:h-[15vh] h-[10vh] flex items-center w-[7.5vw] justify-center"
           onClick={prevSlide}
         >
           <BsChevronCompactLeft size={50} />
@@ -83,7 +83,7 @@ const Slider = () => {
           </div>
         ))}
         <div
-          className="-translate-x-0 text-2xl p-2 bg-red-600 text-white cursor-pointer 2xl:h-[20vh] xl:h-[20vh] lg:h-[20vh] md:h-[15vh] h-[10vh] flex items-center w-[6vw] justify-center"
+          className="-translate-x-0 text-2xl p-2 bg-red-600 text-white cursor-pointer 2xl:h-[20vh] xl:h-[20vh] lg:h-[20vh] md:h-[15vh] h-[10vh] flex items-center w-[7.5vw] justify-center"
           onClick={nextSlide}
         >
           <BsChevronCompactRight size={50} />
