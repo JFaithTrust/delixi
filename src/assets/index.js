@@ -30,6 +30,7 @@ import newBotoom_3 from "./images/news/newBottom_3.jpg";
 import newBotoom_4 from "./images/news/newBottom_4.jpg";
 import newsDetail from './images/news/news_detail.jpg'
 import example from './images/news/example.jpg'
+import home from './images/home.jpg'
 
 export {
   logo,
@@ -60,5 +61,6 @@ export {
   newBotoom_3,
   newBotoom_4,
   newsDetail,
-  example
+  example,
+  home
 };

@@ -2,6 +2,9 @@ import React from "react";
 import { FaFileDownload } from "react-icons/fa";
 import { comunity } from "../constants";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
 const Comunity = () => {
   return (
@@ -18,8 +21,8 @@ const Comunity = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 gap-10 mt-10 xs:grid-cols-3 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-5">
-        {comunity.map((item) => (
-          <div className="flex justify-center 2xl:w-[180px] xl:w-[180px] lg:w-[150px] md:w-[130px] sm:w-[100px] w-[80px]" key={item.url}>
+        {comunity.map((item, index) => (
+          <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)} className="flex justify-center 2xl:w-[180px] xl:w-[180px] lg:w-[150px] md:w-[130px] sm:w-[100px] w-[80px]" key={item.url}>
             <Link to={`/product-detail/${item.name.toLocaleLowerCase().replace(/\s/g, '')}`} className="space-y-4">
               <div className="bg-red-300 border-2 rounded-md border-red-600 p-4 m-2 2xl:h-[150px] xl:h-[150px] lg:h-[150px] md:h-[130px] sm:h-[100px] h-[85px] 2xl:w-[180px] xl:w-[180px] lg:w-[150px] md:w-[130px] sm:w-[100px] w-[85px] flex justify-center shadow-[0_0_50px_0] shadow-[#3478C8]">
                 <img src={item.url} alt="" className="object-center w-full h-full" />
@@ -28,14 +31,14 @@ const Comunity = () => {
                 {item.title}
               </h1>
             </Link>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
   );
 };
 
-export default Comunity;
+export default SectionWrapper(Comunity, "comunity");
 
 // import React from "react";
 // import { FaFileDownload } from "react-icons/fa";

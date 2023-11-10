@@ -3,6 +3,9 @@ import { BsArrowRight } from "react-icons/bs";
 import { comunity } from "../constants";
 import Product from "./Product";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion'
+import { slideIn } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
 const Catalog = () => {
   const [id, setId] = useState(1);
@@ -26,7 +29,7 @@ const Catalog = () => {
         </Link>
       </div>
       <div className="flex 2xl:flex-row xl:flex-row flex-col justify-center 2xl:gap-20 xl:gap-20 gap-0">
-        <div className="flex 2xl:flex-col xl:flex-col lg:flex-row md:flex-row flex-col 2xl:space-y-4 xl:space-y-4 space-y-0 mt-20 2xl:w-[13vw] xl:w-[13vw] w-full justify-between 2xl:gap-y-0 xl:gap-y-0 lg:gap-y-0 md:gap-y-0 gap-y-3">
+        <motion.div variants={slideIn("left", "tween", 0.2, 1)} className="flex 2xl:flex-col xl:flex-col lg:flex-row md:flex-row flex-col 2xl:space-y-4 xl:space-y-4 space-y-0 mt-20 2xl:w-[13vw] xl:w-[13vw] w-full justify-between 2xl:gap-y-0 xl:gap-y-0 lg:gap-y-0 md:gap-y-0 gap-y-3">
           {comunity.map((item) => (
             <div
               className="flex 2xl:flex-col xl:flex-col lg:flex-col md:flex-col flex-row border-2 rounded-md border-red-300 items-center py-2 px-4 cursor-pointer 2xl:justify-center xl:justify-center lg:justify-center md:justify-center justify-between 2xl:w-[13vw] xl:w-[13vw] lg:w-[13vw] md:w-[13vw] w-full"
@@ -49,16 +52,16 @@ const Catalog = () => {
               <h1 className="text-center font-semibold py-1.5">{item.name}</h1>
             </div>
           ))}
-        </div>
-        <div className="border-2 border-red-300 rounded-md px-2 py-8 flex flex-col items-center text-center mt-20 space-y-3">
+        </motion.div>
+        <motion.div variants={slideIn("right", "tween", 0.2, 1)} className="border-2 border-red-300 rounded-md px-2 py-8 flex flex-col items-center text-center mt-20 space-y-3">
           <h1 className="font-semibold text-xl text-red-600">
             Some Infor For Product Type
           </h1>
           <Product pro_id={id} />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
 };
 
-export default Catalog;
+export default SectionWrapper(Catalog, "catalog");

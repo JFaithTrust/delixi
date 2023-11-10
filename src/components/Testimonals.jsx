@@ -1,15 +1,21 @@
 import React from "react";
 import { testimonals } from "../constants";
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
 const Testimonals = () => {
   return (
     <div className="mx-auto container flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12">
-      <div className="flex flex-col items-center h-[20vh] sm:h-[20vh] md:h-[20vh] lg:h-[20vh] xl:h-[20vh]">
-        <h1 className="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+      <motion.div
+        variants={textVariant()}
+        className="flex flex-col items-center h-[20vh] sm:h-[20vh] md:h-[20vh] lg:h-[20vh] xl:h-[20vh]"
+      >
+        <h1 className="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl">
           Mijozlarimiz fikrlari
         </h1>
         <hr className="w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-1.5 rounded-md mx-auto my-2 bg-red-600" />
-        <p className="text-gray-500 dark:text-gray-400 text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+        <p className="text-gray-500 dark:text-gray-400 text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
           atque quidem, dicta enim eveniet iste culpa, blanditiis iusto et, cum{" "}
           explicabo quibusdam fugit eligendi ipsa sunt dolorem. Animi dolorem
@@ -17,10 +23,11 @@ const Testimonals = () => {
           tempora illo dolore animi nulla ipsam. Quidem odit reiciendis
           doloremque culpa?
         </p>
-      </div>
+      </motion.div>
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
-        {testimonals.map((item) => (
-          <div
+        {testimonals.map((item, index) => (
+          <motion.div
+            variants={fadeIn("", "spring", index * 0.5, 0.75)}
             className="flex flex-col bg-red-200 rounded-md py-2 sm:py-4 md:py-6 lg:py-8 xl:py-10 px-2 sm:px-3 md:px-4 lg:px-5 xl:px-6 space-y-2 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10"
             key={item.id}
           >
@@ -90,11 +97,11 @@ const Testimonals = () => {
             <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
               {item.description}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
   );
 };
 
-export default Testimonals;
+export default SectionWrapper(Testimonals, "testimonals");

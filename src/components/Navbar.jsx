@@ -15,6 +15,27 @@ const Navbar = () => {
   const buttonRef = useRef(null);
   const [showMobileNav, setShowMobileNav] = useState(false);
 
+  const panel = {
+    open: {
+      clipPath: "inset(0% 0% 0% 0% round 10px)",
+      transition: {
+        type: "spring",
+        bounce: 0,
+        duration: 0.7,
+        delayChildren: 0.3,
+        staggerChildren: 0.05,
+      },
+    },
+    closed: {
+      clipPath: "inset(10% 50% 90% 50% round 10px)",
+      transition: {
+        type: "spring",
+        bounce: 0,
+        duration: 0.3,
+      },
+    },
+  };
+
   const togglePanel = () => {
     setIsPanelOpen(!isPanelOpen);
   };
@@ -44,12 +65,17 @@ const Navbar = () => {
       <div
         className={`fixed z-50`}
         style={{
-          ...chosenStyles
+          ...chosenStyles,
         }}
       >
-        <div className="bg-red-600 text-white 2xl:p-4 xl:p-4 p-2 rounded-lg shadow-lg 2xl:h-[650px] xl:h-[650px] md:h-[570px] h-[530px]">
+        <motion.div
+          variants={panel}
+          initial={isPanelOpen ? "closed" : "open"}
+          animate={isPanelOpen ? "open" : "closed"}
+          className="bg-red-600 text-white 2xl:p-4 xl:p-4 p-2 rounded-lg shadow-lg 2xl:h-[650px] xl:h-[650px] md:h-[570px] h-[530px]"
+        >
           {children}
-        </div>
+        </motion.div>
       </div>
     );
   };
@@ -102,6 +128,8 @@ const Navbar = () => {
           <div className="text-xl font-semibold">
             <button
               onClick={closedPanel}
+              initial={false}
+              animate={isPanelOpen ? "open" : "closed"}
               className="flex items-center gap-2"
               ref={buttonRef}
             >
@@ -151,7 +179,12 @@ const Navbar = () => {
             </OverlayPanel>
           </div>
         </div>
-        <motion.div initial={{ y: -250 }} animate={{ y: 0 }} transition={{ delay: 0.2, type: 'spring', stiffness: 30 }} className="flex gap-10 text-xl font-semibold items-center">
+        <motion.div
+          initial={{ y: -250 }}
+          animate={{ y: 0 }}
+          transition={{ delay: 0.2, type: "spring", stiffness: 30 }}
+          className="flex gap-10 text-xl font-semibold items-center"
+        >
           <div className="2xl:flex xl:flex hidden gap-10">
             <NavLink
               to={"/"}
