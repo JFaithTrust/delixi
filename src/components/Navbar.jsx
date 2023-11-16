@@ -7,6 +7,11 @@ import { useTranslation } from "react-i18next";
 import { comunity } from "../constants";
 import { motion } from "framer-motion";
 
+function scrollToTop() {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+}
+
 const Navbar = () => {
   const { i18n } = useTranslation();
   const { t } = useTranslation();
@@ -93,16 +98,16 @@ const Navbar = () => {
   const mobileNavLinks = (
     <div className="fixed top-[78px] right-0 h-full w-[200px] bg-white z-50 p-4">
       <div className="flex flex-col gap-4">
-        <NavLink to={"/"} onClick={() => setShowMobileNav(false)}>
+        <NavLink to={"/"} onClick={() => setShowMobileNav(false)} className={({ isActive }) => (!isActive ? "" : "text-red-600")}>
           {t("navbar.main_page")}
         </NavLink>
-        <NavLink to={"/about-us"} onClick={() => setShowMobileNav(false)}>
+        <NavLink to={"/about-us"} onClick={() => setShowMobileNav(false)} className={({ isActive }) => (!isActive ? "" : "text-red-600")}>
           {t("navbar.about_us")}
         </NavLink>
-        <NavLink to={"/branchs"} onClick={() => setShowMobileNav(false)}>
+        {/* <NavLink to={"/branchs"} onClick={() => setShowMobileNav(false)} className={({ isActive }) => (!isActive ? "" : "text-red-600")}>
           {t("navbar.branchs")}
-        </NavLink>
-        <NavLink to={"/news"} onClick={() => setShowMobileNav(false)}>
+        </NavLink> */}
+        <NavLink to={"/news"} onClick={() => setShowMobileNav(false)} className={({ isActive }) => (!isActive ? "" : "text-red-600")}>
           {t("navbar.news")}
         </NavLink>
         <Link
@@ -144,7 +149,7 @@ const Navbar = () => {
               <div className="flex justify-start items-start gap-4">
                 <div className="flex flex-col 2xl:space-y-4 xl:space-y-4 space-y-2 2xl:border-4 xl:border-4 border-2 border-white rounded-lg 2xl:py-5 xl:py-5 py-2 px-3">
                   {comunity.map((item) => (
-                    <div
+                    <div key={item.id}
                       className={`flex items-center border-2 hover:border-blue-500 rounded-md 2xl:py-2 md:py-2 py-1 2xl:px-5 md:px-5 px-3 gap-3 cursor-pointer ${
                         item.id === selectedId
                           ? "border-blue-500"
@@ -169,7 +174,7 @@ const Navbar = () => {
                   {comunity
                     .filter((item) => item.id === selectedId)
                     .map((el) => (
-                      <div className="flex flex-col space-y-5">
+                      <div className="flex flex-col space-y-5" key={el.id}>
                         <h1 className="text-2xl text-center">{el.name}</h1>
                         <p className=" font-thin">{el.description}</p>
                       </div>
@@ -187,25 +192,25 @@ const Navbar = () => {
         >
           <div className="2xl:flex xl:flex hidden gap-10">
             <NavLink
-              to={"/"}
+              to={"/"} onClick={scrollToTop}
               className={({ isActive }) => (!isActive ? "" : "text-red-600")}
             >
               {t("navbar.main_page")}
             </NavLink>
             <NavLink
-              to={"/about-us"}
+              to={"/about-us"} onClick={scrollToTop}
               className={({ isActive }) => (!isActive ? "" : "text-red-600")}
             >
               {t("navbar.about_us")}
             </NavLink>
-            <NavLink
-              to={"/branchs"}
+            {/* <NavLink
+              to={"/branchs"} onClick={scrollToTop}
               className={({ isActive }) => (!isActive ? "" : "text-red-600")}
             >
               {t("navbar.branchs")}
-            </NavLink>
+            </NavLink> */}
             <NavLink
-              to={"/news"}
+              to={"/news"} onClick={scrollToTop}
               className={({ isActive }) => (!isActive ? "" : "text-red-600")}
             >
               {t("navbar.news")}

@@ -16,9 +16,7 @@ const AboutComp = () => {
   return (
     <div className="flex flex-col 2xl:h-[900px] xl:h-[900px] lg:h-[900px] md:h-[900px] sm:h-[800px] h-fit pt-20 pb-0 w-full">
       <div className="flex flex-col items-center 2xl:h-[20vh] xl:h-[20vh] lg:h-[20vh] md:h-[20vh] sm:h-[20vh] h-fit">
-        <motion.h1 variants={textVariant()}
-          className="font-bold text-2xl"
-        >
+        <motion.h1 variants={textVariant()} className="font-bold text-2xl">
           {t("navbar.about_us")}
         </motion.h1>
         <hr className="w-24 h-1 mx-auto my-2 bg-red-600 border-0 rounded md:my-4" />
@@ -68,7 +66,7 @@ const AboutComp = () => {
           <div className="2xl:absolute xl:absolute lg:absolute md:absolute sm:absolute relative bottom-0 left-0">
             <Link to={"/about-us"} onClick={scrollToTop}>
               <button className="py-2 px-4 bg-red-600 text-white rounded-md">
-                Batafsil
+                {t("detailed")}
               </button>
             </Link>
           </div>

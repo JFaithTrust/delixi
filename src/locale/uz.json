@@ -6,5 +6,43 @@
     "branchs": "Filiallar"
   },
   "contact" : "Aloqa",
-  "catalog": "Katalog"
+  "catalog": "Katalog",
+  "detailed": "Batafsil",
+  "download" : "Barcha maxsulotlar katalogini yuklab olish",
+  "hcatalog1" : "Kataloglar orqali o'zingiz xoxlagan",
+  "hcatalog2" : "mahsulotlarni tez va oson toping",
+  "dcatalog" : "Kataloglar bo'yicha mahsulotlar",
+  "overview" : "To'liq ko'rish",
+  "hstatistics1" : "Bizning Mahsulotlarimiz va Xizmatlarimiz",
+  "hstatistics2" : "Foydalanish Uchun Juda Qulay",
+  "moreinfo" : "Ko’proq malumot olish",
+  "feedback" : "Mijozlarimiz fikrlari",
+  "products": "Mahsulotlar",
+  "links": "Foydali Linklar",
+  "about": {
+    "bptag" : "Bizga Aloqa uchun berilgan bog’lamalar orqali aloqaga chiqing va istalgan mahsulotga yoki hizmatimizga buyurtma bering",
+    "hbanner1" : "Istalgan",
+    "hbanner2" : "Mahsulotimizga",
+    "hbanner3" : "Online",
+    "hbanner4" : "Buyurtma",
+    "hbanner5" : "qilish imkoni bor"
+  },
+  "hstatistics" : "Kompanyamiz haqida Statistika Ma’lumotlari",
+  "contacts": {
+    "location1" : "Toshkent Shahar",
+    "location2" : "Usta shirin ko'chasi",
+    "benefit" : "Korhonada mavjuda imkoniyatlar",
+    "benefit1" : "Avtoturargohning",
+    "benefit11" : "mavjudligi",
+    "benefit2" : "Lift orqali Korxona ichida",
+    "benefit22" : "harakatlanish mumkun",
+    "benefit3" : "Istalgan to’lov usulidan",
+    "benefit33" : "foydalanishingiz mumkun",
+    "dan" : "dan",
+    "gacha" : "gacha",
+    "htag1": "O'zbekistondagi",
+    "htag2": "Yangona",
+    "htag3": "Rasmiy",
+    "htag4": "Korxonasi"
+  }
 }

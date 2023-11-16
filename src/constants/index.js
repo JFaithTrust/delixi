@@ -34,10 +34,10 @@ export const navLinks = [
     title: "Biz Haqimizda",
     path: "/about-us",
   },
-  {
-    title: "Filiallar",
-    path: "/branchs",
-  },
+  // {
+  //   title: "Filiallar",
+  //   path: "/branchs",
+  // },
   {
     title: "Yangiliklar",
     path: "/news",
@@ -117,64 +117,7 @@ export const comunity = [
   },
 ];
 
-export const products = [
-  {
-    proudct_id: 1,
-    url: product_1,
-    title: "Product name",
-    description: "Some description",
-    color: "Black",
-  },
-  {
-    proudct_id: 1,
-    url: product_2,
-    title: "Product name",
-    description: "Some description",
-    color: "Black",
-  },
-  {
-    proudct_id: 1,
-    url: product_3,
-    title: "Product name",
-    description: "Some description",
-    color: "Black",
-  },
-  {
-    proudct_id: 1,
-    url: product_4,
-    title: "Product name",
-    description: "Some description",
-    color: "Black",
-  },
-  {
-    proudct_id: 1,
-    url: product_5,
-    title: "Product name",
-    description: "Some description",
-    color: "Black",
-  },
-  {
-    proudct_id: 1,
-    url: product_6,
-    title: "Product name",
-    description: "Some description",
-    color: "Black",
-  },
-  {
-    proudct_id: 1,
-    url: product_7,
-    title: "Product name",
-    description: "Some description",
-    color: "Black",
-  },
-  {
-    proudct_id: 1,
-    url: product_8,
-    title: "Product name",
-    description: "Some description",
-    color: "Black",
-  },
-];
+
 
 export const statistics = [
   {

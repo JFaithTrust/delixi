@@ -3,8 +3,10 @@ import { testimonals } from "../constants";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import { useTranslation } from "react-i18next";
 
 const Testimonals = () => {
+  const { t } = useTranslation();
   return (
     <div className="mx-auto container flex flex-col px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12">
       <motion.div
@@ -12,7 +14,7 @@ const Testimonals = () => {
         className="flex flex-col items-center h-[20vh] sm:h-[20vh] md:h-[20vh] lg:h-[20vh] xl:h-[20vh]"
       >
         <h1 className="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl">
-          Mijozlarimiz fikrlari
+          {t("feedback")}
         </h1>
         <hr className="w-16 sm:w-20 md:w-24 lg:w-28 xl:w-32 h-1.5 rounded-md mx-auto my-2 bg-red-600" />
         <p className="text-gray-500 dark:text-gray-400 text-center text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg">

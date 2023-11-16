@@ -8,25 +8,28 @@ import {
 } from "react-icons/bs";
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoWallet } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex flex-col justify-center pt-20 pb-40 space-y-14 top-[78px] relative">
       <h1 className="text-5xl font-bold text-center">
-        O’zbekistondagi{" "}
+        {t("contacts.htag1")}{" "}
         <span className="text-red-600">
-          Yagona <br className="sm:block hidden" /> Rasmiy
+          {t("contacts.htag2")} <br className="sm:block hidden" />{" "}
+          {t("contacts.htag3")}
         </span>{" "}
-        Korxonasi
+        {t("contacts.htag4")}
       </h1>
       <div className="2xl:flex xl:flex lg:flex hidden justify-center items-center 2xl:gap-28 xl:gap-20 gap-20">
         <div className="flex flex-col 2xl:text-2xl xl:text-xl text-xl font-semibold space-y-6 basis-1/4">
           <div className="flex gap-5 items-center">
             <FaLocationDot className="text-red-600" />
             <p>
-              Toshkent Shahar,
-              <br /> Yunusobod Tuman,
-              <br /> 9-23-34
+              {t("contacts.location1")},
+              <br /> {t("contacts.location2")},,
+              <br /> 964X+7Q4
             </p>
           </div>
           <div className="flex gap-5 items-center">
@@ -36,8 +39,8 @@ const Contact = () => {
           <div className="flex gap-5 items-center">
             <FaCalendarAlt className="text-red-600" />
             <p>
-              <span className="text-red-600">Ish grafigi</span> <br /> Ish
-              kunlari, shanba, yakshanba: <br /> 8:00 dan 21:00 gacha
+              <span className="text-red-600">Ish grafigi: </span>
+              <br /> 8:00 {t("contacts.dan")}, 21:00 {t("contacts.gacha")},
             </p>
           </div>
         </div>
@@ -61,9 +64,9 @@ const Contact = () => {
           <div className="flex gap-5 items-center">
             <FaLocationDot className="text-red-600" />
             <p>
-              Toshkent Shahar,
-               Yunusobod Tuman,
-               9-23-34
+              {t("contacts.location1")},
+              <br /> {t("contacts.location2")},,
+              <br /> 964X+7Q4
             </p>
           </div>
           <div className="flex gap-5 items-center">
@@ -73,8 +76,8 @@ const Contact = () => {
           <div className="flex gap-5 items-center">
             <FaCalendarAlt className="text-red-600" />
             <p>
-              <span className="text-red-600">Ish grafigi</span> <br /> Ish
-              kunlari, shanba, yakshanba: 8:00 dan 21:00 gacha
+              <span className="text-red-600">Ish grafigi: </span>
+              <br /> 8:00 {t("contacts.dan")}, 21:00 {t("contacts.gacha")},
             </p>
           </div>
         </div>
@@ -92,19 +95,19 @@ const Contact = () => {
         </div>
         <div className="flex flex-col justify-start 2xl:text-2xl xl:text-xl text-xl space-y-4 basis-1/4">
           <p className="text-red-600 font-semibold 2xl:text-3xl xl:text-2xl text-2xl text-center">
-            Korxonada mavjud imkoniyatlar
+            {t("contacts.benefit")},
           </p>
           <div className="flex items-center gap-5 font-semibold">
-            <BsFillPCircleFill className="text-red-600" /> Avtoturargohning{" "}
-            <br /> mavjudligi
+            <BsFillPCircleFill className="text-red-600" /> {t("contacts.benefit1")},{" "}
+            <br /> {t("contacts.benefit11")},
           </div>
           <div className="flex items-center gap-5 font-semibold">
-            <BsBuildingFillUp className="text-red-600" /> Lift orqali Korxona
-            ichida <br /> harakatlanish mumkun
+            <BsBuildingFillUp className="text-red-600" /> {t("contacts.benefit2")},
+            <br /> {t("contacts.benefit22")},
           </div>
           <div className="flex items-center gap-5 font-semibold">
-            <IoWallet className="text-red-600" /> Istalgan to’lov usulidan{" "}
-            <br /> foydalanishingiz mumkun
+            <IoWallet className="text-red-600" /> {t("contacts.benefit3")},{" "}
+            <br /> {t("contacts.benefit33")},
           </div>
         </div>
       </div>

@@ -1,24 +1,35 @@
 import React from "react";
 import { about_1, about_2, about_3 } from "../assets";
 import { Statistics, Testimonals, AboutComp } from "../components";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+
+
+function scrollToTop() {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+}
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <div className="top-[78px] relative">
       <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center h-[600px] flex justify-center items-center 2xl:gap-20 xl:gap-10 lg:gap-10">
         <div className="bg-black/80 text-white px-6 py-4 border-4 border-red-600 rounded-3xl space-y-6">
           <h1 className="2xl:text-6xl xl:text-5xl lg:text-4xl text-4xl font-semibold">
-            Istalgan <span className="text-red-600">Mahsulotimizga</span> Online{" "}
+            {t("about.hbanner1")}{" "}
+            <span className="text-red-600">{t("about.hbanner2")}</span>{" "}
+            {t("about.hbanner3")}{" "}
             <br className="2xl:block xl:block lg:block md:block hidden" />{" "}
-            <span className="text-red-600">Buyurtma</span> qilish imkoni bor.
+            <span className="text-red-600">{t("about.hbanner4")}</span>{" "}
+            {t("about.hbanner5")}
           </h1>
-          <p>
-            Bizga Aloqa uchun berilgan bog’lamalar orqali aloqaga chiqing va
-            istalgan mahsulotga yoki hizmatimizga buyurtma bering
-          </p>
-          <button className="bg-red-600 text-white py-2 px-12 rounded-md">
-            Aloqa
-          </button>
+          <p>{t("about.bptag")}</p>
+          <Link to={"/contact"} onClick={scrollToTop}>
+            <button className="bg-red-600 text-white py-2 px-12 rounded-md mt-3">
+              {t("contact")}
+            </button>
+          </Link>
         </div>
         <div className="bg-black/80 p-14 border-2 border-red-600 rounded-3xl 2xl:block xl:block lg:block hidden">
           <svg
@@ -1254,7 +1265,7 @@ const About = () => {
       <div className="px-10 flex flex-col justify-center items-center mt-10">
         <div className="flex flex-col items-center">
           <h1 className="font-bold text-2xl text-center">
-            Kompanyamiz haqida Statistika Ma’lumotlari
+          {t("hstatistics")}
           </h1>
           <hr className="w-24 h-1 mx-auto my-2 bg-red-600 border-0 rounded md:my-4" />
           <p className="text-center">
