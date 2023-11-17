@@ -26,7 +26,7 @@ const Testimonals = () => {
           doloremque culpa?
         </p>
       </motion.div>
-      <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
+      <div className="flex flex-col md:flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
         {testimonals.map((item, index) => (
           <motion.div
             variants={fadeIn("", "spring", index * 0.5, 0.75)}

@@ -4,6 +4,16 @@ import {
   catalog_3,
   catalog_4,
   catalog_5,
+  news1,
+  news10,
+  news2,
+  news3,
+  news4,
+  news5,
+  news6,
+  news7,
+  news8,
+  news9,
   product_1,
   product_2,
   product_3,
@@ -176,7 +186,8 @@ export const ProductService = {
         price: 65,
         category: "Electrical Materials",
         rating: 5,
-      },{
+      },
+      {
         id: 17,
         categoryId: 3,
         name: "Beat",
@@ -459,6 +470,115 @@ export const ProductService = {
         title: "Clubs And Groups",
         description:
           "Our membership management software provides full automation of membership renewals and payments",
+      },
+    ];
+  },
+  getNewsData() {
+    return [
+      {
+        id: 1,
+        url: news1,
+        date: "16:15 / 16.11.2023",
+        viewcount: "156514",
+        title: "To‘palang daryosining yuqori oqimida yangi GESlar quriladi",
+        description:
+          "To‘palang GESdagi modernizatsiya ishlari ko‘zdan kechirildi, shuningdek, prezidentga ko‘mir qazib olish imkoniyatlari bo‘yicha axborot berildi – Surxondaryo viloyatida 82 mln tonna ko‘mir zaxirasi aniqlangan.",
+        cutdesc:
+          "To‘palang GESdagi modernizatsiya ishlari ko‘zdan kechirildi, shuningdek, prezidentga ko‘mir qazib...",
+      },
+      {
+        id: 2,
+        url: news2,
+        viewcount: "4512",
+        date: "16:02 / 16.11.2023",
+        title: "AQSh va Xitoy munosabatlaridagi iliqlik. Kimga nima kerak?",
+        cutdesc:
+          "XXR raisi Si Jinping va AQSh prezidenti Jo Bayden San-Fransisko yaqinida o‘tkazilgan uchrashuvda...",
+        description:
+          "XXR raisi Si Jinping va AQSh prezidenti Jo Bayden San-Fransisko yaqinida o‘tkazilgan uchrashuvda ikki davlat harbiylari o‘rtasidagi to‘g‘ridan to‘g‘ri aloqa kanallarini tiklashga kelishib oldi. Bu aloqa Vakillar palatasi spikerining Tayvanga tashrifidan keyin xitoyliklar tomonidan yopilgandi.",
+      },
+      {
+        id: 3,
+        url: news3,
+        viewcount: "78662",
+        date: "21:05 / 15.11.2023",
+        cutdesc:
+          "50 yil avval arab davlatlari va Isroil o‘rtasida «Qiyomat kuni» nomini olgan urush bo‘lib...",
+        title:
+          "Embargo ko‘lankasi. Arablar 50 yil avvalgi kabi neft jo‘mragini yopa oladimi?",
+        description:
+          "50 yil avval arab davlatlari va Isroil o‘rtasida «Qiyomat kuni» nomini olgan urush bo‘lib o‘tgandi. O‘shanda isroilliklar AQSh yordami bilan davlatini saqlab qoladi. Bunga javoban arablar G‘arbga neft embargosi e’lon qilishadi. Oqibatda dunyo iqtisodiyotining «oyog‘i osmondan bo‘lib ketadi». Bugun yana yarim asr avvalgi kabi tarix takrorlanmoqda: Isroil arab diyorida urushmoqda, AQSh yordamga yetib keldi, arablarning jahli chiqqan.",
+      },
+      {
+        id: 4,
+        url: news4,
+        cutdesc:
+          "Sog‘liqni saqlash vaziriga ko‘ra, mazkur holat bilan bog‘liq bo‘lgan barcha mas’ul xodimlar hozirda...",
+        viewcount: "787212",
+        date: "09:54 / 15.11.2023",
+        title:
+          "'Antistrumin' voqeasi: Amrillo Inoyatov bolalarga yod preparati yuqori dozada berilganini tan oldi",
+        description:
+          "Sog‘liqni saqlash vaziriga ko‘ra, mazkur holat bilan bog‘liq bo‘lgan barcha mas’ul xodimlar hozirda qonun oldida javob berishni boshlagan.",
+      },
+      {
+        id: 5,
+        url: news5,
+        viewcount: "78123",
+        date: "7:44 / 14.11.2023",
+        title:
+          "“2-3 oy ish va keyin uzoq yillik qamoq” – yurist migrantlarni Rossiyadagi narkokurerlik oqibatlaridan ogohlantirdi",
+        description:
+          "Migratsiya masalalari bo‘yicha ekspert Botirjon Shermuhammad Rossiyadagi o‘zbek vatandoshlarini pul uchun narkokurerlikka yollanish va uning og‘ir oqibatlaridan ogohlantirdi.",
+      },
+      {
+        id: 6,
+        url: news6,
+        viewcount: "21354",
+        date: "10:03 / 16.11.2023",
+        title: "Rezaksoy suv ombori hududida turizm zonasi tashkil etiladi",
+        description:
+          "Namangan viloyati hokimligi tegishli vazirlik va idoralar bilan birgalikda Chust tumani Rezaksoy mahallasida joylashgan Rezaksoy suv ombori hududida “Rezaksoy turizm zonasi” tashkil etish yuzasidan hukumatga taklif kiritadi.",
+      },
+      {
+        id: 7,
+        url: news7,
+        viewcount: "96345",
+        date: "10:01 / 16.11.2023",
+        title:
+          "Toshkent viloyatida qo‘ziqorinchilikni rivojlantirish boshlanadi",
+        description:
+          "Kambag‘allikni qisqartirish va bandlik vazirligi Toshkent viloyati hokimligi bilan birgalikda O‘rta Chirchiq tumani Do‘stlik mahallasida qo‘ziqorinchilikni rivojlantirish orqali aholi rasmiy bandligini ta’minlaydi.",
+      },
+      {
+        id: 8,
+        url: news8,
+        viewcount: "345781",
+        date: "10:00 / 16.11.2023",
+        title:
+          "“O‘zbekinvest” sug‘urta kompaniyasi IPO joylashtirish jarayonini boshladi",
+        description:
+          "Prezident Sh.Mirziyoyev tomonidan tasdiqlangan 2022–2026-yillarda Yangi O‘zbekistonning taraqqiyot strategiyasiga muvofiq, O‘zbekistondagi eng yirik sug‘urta tashkiloti - “O‘zbekinvest” eksport-import sug‘urta kompaniyasi Road show – “Toshkent” respublika fond birjasida aksiyalarning birlamchi ommaviy joylashtirishni (IPO) o‘tkazish uchun salohiyatli investorlar bilan bir qator uchrashuvlar o‘tkazilishini e’lon qildi.",
+      },
+      {
+        id: 9,
+        url: news9,
+        viewcount: "878632",
+        date: "09:59 / 16.11.2023",
+        title:
+          "Andijonda qishloq xo‘jaligida suv tanqisligining oldini olish uchun yangi suv chiqarish inshooti quriladi",
+        description:
+          "Qishloq xo‘jaligida suv tanqisligi oldini olish uchun 1200 gektar yer maydonini suv bilan ta’minlovchi yangi suv chiqarish inshooti quriladi hamda 1700 gektar yer maydonini suv bilan ta’minlovchi “Guliston” suv chiqarish inshooti kapital ta’mirlanadi.",
+      },
+      {
+        id: 10,
+        url: news10,
+        viewcount: "878215",
+        date: "08:36 / 16.11.2023",
+        title:
+          "Davlat tashkilotlarida ommaviy umumrespublika diktanti tashkil etiladi",
+        description:
+          "O‘zbekistonda Konstitutsiya kuniga bag‘ishlangan tadbirlarga tayyorgarlik ko‘rish dasturi tasdiqlandi.",
       },
     ];
   },

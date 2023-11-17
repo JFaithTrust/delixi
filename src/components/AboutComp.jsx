@@ -76,4 +76,4 @@ const AboutComp = () => {
   );
 };
 
-export default SectionWrapper(AboutComp, "about");
+export default SectionWrapper(AboutComp, "aboutComp");

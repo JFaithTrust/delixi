@@ -10,3 +10,8 @@ export { default as Product } from "./Product";
 export { default as Statistics } from "./Statistics.jsx";
 export { default as News } from "./News";
 export { default as Testimonals } from "./Testimonals";
+export { default as AboutBanner } from "./AboutBanner"
+export { default as AboutStatistics } from "./AboutStatistics.jsx";
+export { default as NewsLeft } from './NewsLeft'
+export { default as NewsRight } from './NewsRight'
+export { default as ContactMotion } from './ContactMotion'

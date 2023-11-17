@@ -32,6 +32,17 @@ import newsDetail from './images/news/news_detail.jpg'
 import example from './images/news/example.jpg'
 import home from './images/home.jpg'
 
+import news1 from "./images/news/news1.jpg"
+import news2 from "./images/news/news2.jpg"
+import news3 from "./images/news/news3.jpg"
+import news4 from "./images/news/news4.jpg"
+import news5 from "./images/news/news5.jpg"
+import news6 from "./images/news/news6.jpg"
+import news7 from "./images/news/news7.jpg"
+import news8 from "./images/news/news8.jpg"
+import news9 from "./images/news/news9.jpg"
+import news10 from "./images/news/news10.jpg"
+
 export {
   logo,
   about,
@@ -62,5 +73,15 @@ export {
   newBotoom_4,
   newsDetail,
   example,
-  home
+  home,
+  news1,
+  news2,
+  news3,
+  news4,
+  news5,
+  news6,
+  news7,
+  news8,
+  news9,
+  news10,
 };

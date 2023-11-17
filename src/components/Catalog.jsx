@@ -64,7 +64,7 @@ const Catalog = () => {
           className="border-2 border-red-300 rounded-md px-2 py-8 flex flex-col items-center text-center mt-20 space-y-3"
         >
           <h1 className="font-semibold text-xl text-red-600">
-            Some Infor For Product Type
+          {t("cataloginfo")}
           </h1>
           <Product pro_id={id} />
         </motion.div>
