@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import { ProductService } from "../constants/servise";
 import { motion } from "framer-motion";
 
+function scrollToTop() {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+}
+
 const NewsRight = () => {
   const news = ProductService.getNewsData();
   const variants1 = {
@@ -15,6 +20,7 @@ const NewsRight = () => {
       {news.slice(1, 4).map((item) => (
         <Link
           to={`/news-detail/${item.id}`}
+          onClick={scrollToTop}
           className="flex 2xl:flew-row sm:flex-row flex-col gap-5 border-2 border-gray-300 p-2 rounded-lg 2xl:w-[62vw] xl:w-[70vw]"
           key={item.id}
         >
